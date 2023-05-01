@@ -1,8 +1,6 @@
 import Listeners.*;
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Form extends JFrame
 {
@@ -30,6 +28,7 @@ public class Form extends JFrame
     private JComboBox<String> comboBoxFonts;
     private JComboBox<Integer> comboBoxSizes;
     private JTextPane textPaneVariant, textPaneAnswers;
+    private JButton buttonApply;
 
     //////////////////////////////////////////////////
     ////////// Вкладка "Сохранение и генерация" //////
@@ -41,7 +40,6 @@ public class Form extends JFrame
     private JButton buttonSave, buttonCreate;
     private JFileChooser fileChooser;
     private TextFieldQuantityInput textFieldQuantityInput;
-    private TextFieldSaveInput textFieldSaveInput;
     private ButtonSaveClick buttonSaveClick;
     private ButtonCreateClick buttonCreateClick;
 
@@ -105,9 +103,6 @@ public class Form extends JFrame
 
         textFieldQuantityInput = new TextFieldQuantityInput(textFieldQuantity);
         textFieldQuantity.addKeyListener(textFieldQuantityInput);
-
-        textFieldSaveInput = new TextFieldSaveInput(textFieldSave);
-        textFieldSave.addKeyListener(textFieldSaveInput);
 
         fileChooser = new JFileChooser();
         buttonSaveClick = new ButtonSaveClick(fileChooser, textFieldSave);
