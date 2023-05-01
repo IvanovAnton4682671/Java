@@ -39,8 +39,8 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="ad815" binding="firstPanel" layout-manager="GridLayoutManager" row-count="12" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="10" bottom="0" right="0"/>
+          <grid id="ad815" binding="tasksPanel" layout-manager="GridLayoutManager" row-count="12" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Задания"/>
             </constraints>
@@ -53,7 +53,7 @@
             <children>
               <component id="19a09" class="javax.swing.JLabel" binding="labelChoice">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -64,7 +64,7 @@
               </component>
               <component id="6b397" class="javax.swing.JLabel" binding="labelTheory">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -75,7 +75,7 @@
               </component>
               <component id="2067a" class="javax.swing.JButton" binding="buttonTheory">
                 <constraints>
-                  <grid row="5" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-13025722"/>
@@ -91,7 +91,7 @@
               </component>
               <component id="ea5fa" class="javax.swing.JLabel" binding="labelPractice">
                 <constraints>
-                  <grid row="7" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="7" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -102,7 +102,7 @@
               </component>
               <component id="3ce08" class="javax.swing.JButton" binding="buttonPractice">
                 <constraints>
-                  <grid row="10" column="0" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-13025722"/>
@@ -116,7 +116,7 @@
               </component>
               <component id="e7a7a" class="javax.swing.JCheckBox" binding="checkBoxTheory1">
                 <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -128,7 +128,7 @@
               </component>
               <component id="dba91" class="javax.swing.JCheckBox" binding="checkBoxTheory2">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -140,7 +140,7 @@
               </component>
               <component id="e1443" class="javax.swing.JCheckBox" binding="checkBoxTheory3">
                 <constraints>
-                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -150,21 +150,9 @@
                   <text value="3"/>
                 </properties>
               </component>
-              <component id="650dd" class="javax.swing.JCheckBox" binding="checkBoxTheory4">
-                <constraints>
-                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="4"/>
-                </properties>
-              </component>
               <component id="c5675" class="javax.swing.JCheckBox" binding="checkBoxTheory5">
                 <constraints>
-                  <grid row="4" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -176,7 +164,7 @@
               </component>
               <component id="5779d" class="javax.swing.JCheckBox" binding="checkBoxPractice1">
                 <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -188,7 +176,7 @@
               </component>
               <component id="31eec" class="javax.swing.JCheckBox" binding="checkBoxPractice2">
                 <constraints>
-                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -200,7 +188,7 @@
               </component>
               <component id="ab6be" class="javax.swing.JCheckBox" binding="checkBoxPractice3">
                 <constraints>
-                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -212,7 +200,7 @@
               </component>
               <component id="da039" class="javax.swing.JCheckBox" binding="checkBoxPractice4">
                 <constraints>
-                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -224,7 +212,7 @@
               </component>
               <component id="7aa5b" class="javax.swing.JCheckBox" binding="checkBoxPractice5">
                 <constraints>
-                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -236,7 +224,7 @@
               </component>
               <component id="27cef" class="javax.swing.JCheckBox" binding="checkBoxPractice6">
                 <constraints>
-                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -248,7 +236,7 @@
               </component>
               <component id="30a75" class="javax.swing.JCheckBox" binding="checkBoxPractice7">
                 <constraints>
-                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -260,7 +248,7 @@
               </component>
               <component id="c0fd" class="javax.swing.JCheckBox" binding="checkBoxPractice8">
                 <constraints>
-                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -272,7 +260,7 @@
               </component>
               <component id="d5021" class="javax.swing.JCheckBox" binding="checkBoxPractice9">
                 <constraints>
-                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -284,7 +272,7 @@
               </component>
               <component id="b842" class="javax.swing.JCheckBox" binding="checkBoxPractice10">
                 <constraints>
-                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -296,7 +284,7 @@
               </component>
               <component id="e1921" class="javax.swing.JCheckBox" binding="checkBoxPractice11">
                 <constraints>
-                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -308,7 +296,7 @@
               </component>
               <component id="67cdc" class="javax.swing.JCheckBox" binding="checkBoxPractice12">
                 <constraints>
-                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -320,7 +308,7 @@
               </component>
               <component id="b428a" class="javax.swing.JCheckBox" binding="checkBoxPractice13">
                 <constraints>
-                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -332,7 +320,7 @@
               </component>
               <component id="a98ba" class="javax.swing.JCheckBox" binding="checkBoxPractice14">
                 <constraints>
-                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -342,42 +330,54 @@
                   <text value="14"/>
                 </properties>
               </component>
-              <vspacer id="1ebdb">
+              <vspacer id="f694d">
                 <constraints>
-                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
               <vspacer id="cb7f0">
                 <constraints>
-                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="1ebdb">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
               <vspacer id="abb0f">
                 <constraints>
-                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <vspacer id="f694d">
+              <hspacer id="5ecb7">
                 <constraints>
-                  <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                </constraints>
-              </vspacer>
-              <hspacer id="a2987">
-                <constraints>
-                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <hspacer id="a93dd">
+              <hspacer id="69fb0">
                 <constraints>
-                  <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
+              <component id="650dd" class="javax.swing.JCheckBox" binding="checkBoxTheory4">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="4"/>
+                </properties>
+              </component>
             </children>
           </grid>
-          <grid id="7f8b2" binding="secondPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
+          <grid id="7f8b2" binding="previewPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
             <constraints>
-              <tabbedpane title="Сохранение и генерация"/>
+              <tabbedpane title="Предпросмотр"/>
             </constraints>
             <properties>
               <background color="-14472911"/>
@@ -385,7 +385,256 @@
               <foreground color="-11613021"/>
             </properties>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="e0bd2" class="javax.swing.JTextPane" binding="textPaneVariant">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+              <component id="263cc" class="javax.swing.JTextPane" binding="textPaneAnswers">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+              <component id="5d2ef" class="javax.swing.JLabel" binding="labelFontsAndSize">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Выберите предпочитаемый шрифт и размер"/>
+                </properties>
+              </component>
+              <component id="8426" class="javax.swing.JComboBox" binding="comboBoxFonts">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+              <component id="4624d" class="javax.swing.JComboBox" binding="comboBoxSizes">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8b0a" binding="savingAndGeneratingPanel" layout-manager="GridLayoutManager" row-count="12" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Сохранение и генерация"/>
+            </constraints>
+            <properties>
+              <background color="-14472911"/>
+              <font name="JetBrains Mono" size="14" style="1"/>
+              <foreground color="-11613021"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="55787" class="javax.swing.JLabel" binding="labelQuantity">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Выберите, сколько вариантов хотите создать"/>
+                </properties>
+              </component>
+              <component id="57647" class="javax.swing.JLabel" binding="labelHow">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Выберите, как хотите сохранить полученные варианты "/>
+                </properties>
+              </component>
+              <component id="6c5b5" class="javax.swing.JLabel" binding="labelWay">
+                <constraints>
+                  <grid row="7" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Выберите путь сохранения вариантов "/>
+                </properties>
+              </component>
+              <component id="9cd2e" class="javax.swing.JRadioButton" binding="radioButtonMany">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="В разных файлах"/>
+                </properties>
+              </component>
+              <component id="398a9" class="javax.swing.JRadioButton" binding="radioButtonOne">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="В одном файле"/>
+                </properties>
+              </component>
+              <component id="24c0f" class="javax.swing.JTextField" binding="textFieldQuantity">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+              <component id="e229a" class="javax.swing.JButton" binding="buttonSave">
+                <constraints>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <defaultCapable value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Сохранить"/>
+                </properties>
+              </component>
+              <component id="41a01" class="javax.swing.JTextField" binding="textFieldSave">
+                <constraints>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                </properties>
+              </component>
+              <component id="3a4ce" class="javax.swing.JButton" binding="buttonCreate">
+                <constraints>
+                  <grid row="10" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13025722"/>
+                  <defaultCapable value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="Создать"/>
+                </properties>
+              </component>
+              <vspacer id="7b908">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="e34eb">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="25484">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="e8b35">
+                <constraints>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="9edb5">
+                <constraints>
+                  <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="aab05">
+                <constraints>
+                  <grid row="10" column="10" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="171a6">
+                <constraints>
+                  <grid row="10" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="cb28">
+                <constraints>
+                  <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="b08c7">
+                <constraints>
+                  <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="dd8ac">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="a0cc9">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="1966f">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="ca897">
+                <constraints>
+                  <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="fba11">
+                <constraints>
+                  <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
           </grid>
         </children>
       </tabbedpane>

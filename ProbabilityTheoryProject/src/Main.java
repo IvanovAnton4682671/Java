@@ -1,6 +1,7 @@
 import com.formdev.flatlaf.*;
 
 import static javax.swing.JDialog.setDefaultLookAndFeelDecorated;
+
 import javax.swing.*;
 
 public class Main

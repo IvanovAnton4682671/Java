@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aa9a9c-fcf4-4109-b1dc-a96b712c9ada" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconImage0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iconImage1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Frame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Panel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panel.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonPracticeClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonPracticeClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Programming/TheJavaProbabilityTheoryProject/ProbabilityTheoryProject/src/dopRes/flatlaf-3.1.1.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/3 Java/АбстрактныеКлассы/KW2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

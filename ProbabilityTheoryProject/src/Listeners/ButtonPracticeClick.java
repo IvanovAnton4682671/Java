@@ -15,20 +15,20 @@ public class ButtonPracticeClick implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
         int kol = 0;
-        for (JCheckBox cbt : checkBoxesPractice)
+        for (JCheckBox cbp : checkBoxesPractice)
         {
-            if (cbt.isSelected())
+            if (cbp.isSelected())
                 kol++;
         }
         if (kol < 14)
         {
-            for (JCheckBox cbt : checkBoxesPractice)
-                cbt.setSelected(true);
+            for (JCheckBox cbp : checkBoxesPractice)
+                cbp.setSelected(true);
         }
         else
         {
-            for (JCheckBox cbt : checkBoxesPractice)
-                cbt.setSelected(false);
+            for (JCheckBox cbp : checkBoxesPractice)
+                cbp.setSelected(false);
         }
     }
 
