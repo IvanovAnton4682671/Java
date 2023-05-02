@@ -401,6 +401,8 @@
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
                   <opaque value="true"/>
+                  <selectedTextColor color="-7881822"/>
+                  <selectionColor color="-11173237"/>
                   <text value="Вариант 1&#10;&#10;1)Какое-то задание&#10;А)1&#10;Б)2&#10;В)3&#10;Г)4&#10;&#10;2)Какое-то другое задание&#10;А)1&#10;Б)2&#10;В)3&#10;Г)4"/>
                 </properties>
               </component>
@@ -417,6 +419,8 @@
                   <editable value="false"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
+                  <selectedTextColor color="-7881822"/>
+                  <selectionColor color="-11173237"/>
                   <text value="Ответы&#10;&#10;Вариант 1: 1 - А); 2 - Б); ...&#10;&#10;Вариант 2: 1 - В); 2 - Г); ...&#10;&#10;...&#10;&#10;Вариант n: 1 - Г); 2 - А); ..."/>
                 </properties>
               </component>
@@ -582,6 +586,8 @@
                   <background color="-13025722"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
+                  <selectedTextColor color="-7881822"/>
+                  <selectionColor color="-11173237"/>
                 </properties>
               </component>
               <component id="e229a" class="javax.swing.JButton" binding="buttonSave">
@@ -609,6 +615,8 @@
                   <editable value="false"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
+                  <selectedTextColor color="-7881822"/>
+                  <selectionColor color="-11173237"/>
                 </properties>
               </component>
               <component id="3a4ce" class="javax.swing.JButton" binding="buttonCreate">

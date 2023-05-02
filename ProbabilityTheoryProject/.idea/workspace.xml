@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aa9a9c-fcf4-4109-b1dc-a96b712c9ada" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/poi_3_17.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +40,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programming/3 Java/АбстрактныеКлассы/KW2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/TheJavaProbabilityTheoryProject/ProbabilityTheoryProject/src/dopRes/poiLib/xmlbeans-2.6.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
