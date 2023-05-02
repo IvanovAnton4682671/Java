@@ -29,6 +29,7 @@ public class Form extends JFrame
     private JComboBox<Integer> comboBoxSizes;
     private JTextPane textPaneVariant, textPaneAnswers;
     private JButton buttonApply;
+    private ButtonApplyClick buttonApplyClick;
 
     //////////////////////////////////////////////////
     ////////// Вкладка "Сохранение и генерация" //////
@@ -79,19 +80,9 @@ public class Form extends JFrame
         //////////////////////////////////////////////////
         ////////// Вкладка "Предпросмотр" ////////////////
         //////////////////////////////////////////////////
-        //создаю массивы чтобы добавить их в комбобокс
-        /*ArrayList<String> fonts = new ArrayList<String>();
-        fonts.add("Arial"); fonts.add("Bahnschrift"); fonts.add("Calibri"); fonts.add("Gabriola"); fonts.add("Impact");
-        fonts.add("Meiryo"); fonts.add("Roboto"); fonts.add("Sylfaen"); fonts.add("Tahoma"); fonts.add("Times New Roman");
-        fonts.add("Verdana");
-        ArrayList<Integer> sizes = new ArrayList<Integer>();
-        sizes.add(5); sizes.add(8); sizes.add(9); sizes.add(10); sizes.add(11);
-        sizes.add(12); sizes.add(14); sizes.add(16); sizes.add(18); sizes.add(20);
-        sizes.add(22); sizes.add(26); sizes.add(28); sizes.add(36); sizes.add(48);
-        sizes.add(56); sizes.add(72);
-        comboBoxFonts = new JComboBox(fonts.toArray());
-        comboBoxSizes = new JComboBox(sizes.toArray());
-        add(comboBoxFonts); add(comboBoxSizes);*/
+        //не обработано исключение, если пользователь не нажмёт на кнопку
+        buttonApplyClick = new ButtonApplyClick(comboBoxFonts, comboBoxSizes, textPaneVariant, textPaneAnswers);
+        buttonApply.addActionListener(buttonApplyClick);
 
         //////////////////////////////////////////////////
         ////////// Вкладка "Сохранение и генерация" //////

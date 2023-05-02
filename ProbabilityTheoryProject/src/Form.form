@@ -433,22 +433,56 @@
               </component>
               <component id="8426" class="javax.swing.JComboBox" binding="comboBoxFonts">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="280" height="30"/>
+                    <preferred-size width="280" height="30"/>
+                    <maximum-size width="280" height="30"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <background color="-13025722"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
+                  <model>
+                    <item value="Arial"/>
+                    <item value="Bahnschrift"/>
+                    <item value="Calibri"/>
+                    <item value="Gabriola"/>
+                    <item value="Impact"/>
+                    <item value="Meiryo"/>
+                    <item value="Roboto"/>
+                    <item value="Sylfaen"/>
+                    <item value="Tahoma"/>
+                    <item value="Times New Roman"/>
+                    <item value="Verdana"/>
+                  </model>
                 </properties>
               </component>
               <component id="4624d" class="javax.swing.JComboBox" binding="comboBoxSizes">
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="280" height="30"/>
+                    <preferred-size width="280" height="30"/>
+                    <maximum-size width="280" height="30"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <background color="-13025722"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
+                  <model>
+                    <item value="9"/>
+                    <item value="10"/>
+                    <item value="11"/>
+                    <item value="12"/>
+                    <item value="14"/>
+                    <item value="18"/>
+                    <item value="20"/>
+                    <item value="26"/>
+                    <item value="28"/>
+                    <item value="36"/>
+                    <item value="48"/>
+                  </model>
                 </properties>
               </component>
               <component id="f7e8c" class="javax.swing.JButton" binding="buttonApply">
