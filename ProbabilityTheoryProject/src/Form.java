@@ -99,7 +99,8 @@ public class Form extends JFrame
         buttonSaveClick = new ButtonSaveClick(fileChooser, textFieldSave);
         buttonSave.addActionListener(buttonSaveClick);
 
-        buttonCreateClick = new ButtonCreateClick(checkBoxesTheory, checkBoxesPractice, textFieldQuantity, radioButtonMany, radioButtonOne, textFieldSave);
+        buttonCreateClick = new ButtonCreateClick(checkBoxesTheory, checkBoxesPractice, textFieldQuantity, radioButtonMany, radioButtonOne, textFieldSave, comboBoxFonts, comboBoxSizes, checkBoxTheory1, checkBoxTheory2, checkBoxTheory3, checkBoxTheory4, checkBoxTheory5, checkBoxPractice1, checkBoxPractice2, checkBoxPractice3, checkBoxPractice4, checkBoxPractice5, checkBoxPractice6, checkBoxPractice7, checkBoxPractice8,
+                checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13, checkBoxPractice14);
         buttonCreate.addActionListener(buttonCreateClick);
     }
 }

@@ -21,7 +21,7 @@ public class Main
         //
         //тест
         //
-        String[] specialSymbols = {"xᵢ", "xᵢ₊₁", "xᵢ - xᵢ₊₁", "nᵢ", "n₃", "X̅", "ʙ", "x̅ᵧ", "ρyx", "y̅", "x̅", "y̅ₓ"};
+        /*String[] specialSymbols = {"xᵢ", "xᵢ₊₁", "xᵢ - xᵢ₊₁", "nᵢ", "n₃", "X̅", "ʙ", "x̅ᵧ", "ρyx", "y̅", "x̅", "y̅ₓ"};
         PoiMainClass poiMainClass = new PoiMainClass("test1", "Times New Roman", 14);
         poiMainClass.newParagraph();
         poiMainClass.addText("test2");
@@ -39,6 +39,6 @@ public class Main
         poiMainClass.addPicture("src/dopRes/iconImage.png", 980/2, 980/2);
         poiMainClass.newParagraph();
         poiMainClass.addText(specialSymbols[3] + "kek" + 5);
-        poiMainClass.printToFile();
+        poiMainClass.printToFile();*/
     }
 }

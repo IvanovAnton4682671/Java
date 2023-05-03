@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aa9a9c-fcf4-4109-b1dc-a96b712c9ada" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/poi_3_17.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProbabilityTheoryProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Listeners/ButtonCreateClick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Listeners/ButtonCreateClick.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProbabilityTheoryProject/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PoiMainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>

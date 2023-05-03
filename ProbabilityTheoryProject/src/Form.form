@@ -475,9 +475,9 @@
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
                   <model>
+                    <item value="5"/>
                     <item value="9"/>
                     <item value="10"/>
-                    <item value="11"/>
                     <item value="12"/>
                     <item value="14"/>
                     <item value="18"/>
@@ -499,8 +499,8 @@
                   <focusable value="false"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
-                  <label value="Посмотреть шрифт и размер"/>
-                  <text value="Посмотреть шрифт и размер"/>
+                  <label value="Применить шрифт и размер"/>
+                  <text value="Применить шрифт и размер"/>
                 </properties>
               </component>
             </children>
@@ -617,6 +617,7 @@
                   <foreground color="-11613021"/>
                   <selectedTextColor color="-7881822"/>
                   <selectionColor color="-11173237"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="3a4ce" class="javax.swing.JButton" binding="buttonCreate">
