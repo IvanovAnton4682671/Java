@@ -19,6 +19,9 @@ public class TheoryTask2
 
     public void theoryTask2Function()
     {
+        ///////////////////////////////////////////////////////////////////
+        //тут всё хорошо, все символы корректно отображаются (и картинки)//
+        ///////////////////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] theoryTask2Questions = {"Что означает операция А+В?", "Что означает операция АВ?", "Выберите НЕВЕРНОЕ утверждение",
                 "A и B - независимые события. Тогда справедливо следующее утверждение:", "Равномерное распределение случайной величины имеет вид",
@@ -45,12 +48,55 @@ public class TheoryTask2
         String[] res3 = {"", "", "", ""};
         for (int i = 0; i < 4; i++)
             res3[i] = res2.get(i);
-        for (int i = 0; i < 4; i++)
+        if (number == 3)
         {
-            poiMainClassVariant.newParagraph();
-            poiMainClassVariant.addText(alphabet[i] + res3[i]);
-            if (res3[i] == theoryTask2Answers[number][0])
-                poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
+            String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion14_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion14_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion14_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion14_d.png"};
+            int[][] resSizes = { {137, 24}, {132, 27}, {191, 25}, {113, 25} };
+            for (int i = 0; i < 4; i++)
+            {
+                poiMainClassVariant.newParagraph();
+                poiMainClassVariant.addText(alphabet[i]);
+                if (res3[i] == "P(B/A) = P(B)")
+                    poiMainClassVariant.addPicture(resImages[0], resSizes[0][0], resSizes[0][1]);
+                if (res3[i] == "P(A/B) = P(B)")
+                    poiMainClassVariant.addPicture(resImages[1], resSizes[1][0], resSizes[1][1]);
+                if (res3[i] == "P(AUB) = P(A)P(B)")
+                    poiMainClassVariant.addPicture(resImages[2], resSizes[2][0], resSizes[2][1]);
+                if (res3[i] == "P(AnB) = 0")
+                    poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
+                if (res3[i] == theoryTask2Answers[number][0])
+                    poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
+            }
+        }
+        else if (number == 4 || number == 5 || number == 6 || number == 7)
+        {
+            String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion15_16_17_18_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion15_16_17_18_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion15_16_17_18_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion15_16_17_18_d.png"};
+            int[][] resSizes = { {121, 41}, {68, 24}, {138, 22}, {150, 22} };
+            for (int i = 0; i < 4; i++)
+            {
+                poiMainClassVariant.newParagraph();
+                poiMainClassVariant.addText(alphabet[i]);
+                if (res3[i] == "P(X = m) = (λ^m * e^(-λ))/m!")
+                    poiMainClassVariant.addPicture(resImages[0], resSizes[0][0], resSizes[0][1]);
+                if (res3[i] == "Pₘ = 1/n")
+                    poiMainClassVariant.addPicture(resImages[1], resSizes[1][0], resSizes[1][1]);
+                if (res3[i] == "P(X = m) = p^m * q^(n-m)")
+                    poiMainClassVariant.addPicture(resImages[2], resSizes[2][0], resSizes[2][1]);
+                if (res3[i] == "P(X = m) = Cₙ^m * p^m * q^(n-m)")
+                    poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
+                if (res3[i] == theoryTask2Answers[number][0])
+                    poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
+            }
+        }
+        else
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                poiMainClassVariant.newParagraph();
+                poiMainClassVariant.addText(alphabet[i] + res3[i]);
+                if (res3[i] == theoryTask2Answers[number][0])
+                    poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
+            }
         }
     }
 }
