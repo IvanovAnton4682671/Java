@@ -3,6 +3,7 @@ package Listeners;
 import Functions.TheoryTask1;
 import Functions.TheoryTask2;
 import Functions.TheoryTask3;
+import Functions.TheoryTask4;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -138,6 +139,11 @@ public class ButtonCreateClick implements ActionListener
                     {
                         TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers);
                         theoryTask3.theoryTask3Function();
+                    }
+                    if (checkBoxTheory4.isSelected())
+                    {
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask4.theoryTask4Function();
                     }
                     poiMainClassVariant.printToFile();
                 }

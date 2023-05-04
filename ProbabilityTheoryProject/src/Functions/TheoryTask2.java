@@ -92,8 +92,16 @@ public class TheoryTask2
         {
             for (int i = 0; i < 4; i++)
             {
-                poiMainClassVariant.newParagraph();
-                poiMainClassVariant.addText(alphabet[i] + res3[i]);
+                if (i == 3)
+                {
+                    poiMainClassVariant.newParagraph();
+                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                }
+                else
+                {
+                    poiMainClassVariant.newParagraph();
+                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                }
                 if (res3[i] == theoryTask2Answers[number][0])
                     poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
             }

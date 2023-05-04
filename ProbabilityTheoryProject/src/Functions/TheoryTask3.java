@@ -84,9 +84,18 @@ public class TheoryTask3
         }
         else
         {
-            for (int i = 0; i < 4; i++) {
-                poiMainClassVariant.newParagraph();
-                poiMainClassVariant.addText(alphabet[i] + res3[i]);
+            for (int i = 0; i < 4; i++)
+            {
+                if (i == 3)
+                {
+                    poiMainClassVariant.newParagraph();
+                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                }
+                else
+                {
+                    poiMainClassVariant.newParagraph();
+                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                }
                 if (res3[i] == theoryTask3Answers[number][0])
                     poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
             }

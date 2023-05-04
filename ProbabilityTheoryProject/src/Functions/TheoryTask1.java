@@ -45,8 +45,15 @@ public class TheoryTask1
             res3[i] = res2.get(i);
         for (int i = 0; i < 4; i++)
         {
-            poiMainClassVariant.newParagraph();
-            poiMainClassVariant.addText(alphabet[i] + res3[i]);
+            if (i == 3)
+            {
+                poiMainClassVariant.newParagraph();
+                poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+            } else
+            {
+                poiMainClassVariant.newParagraph();
+                poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+            }
             if (res3[i] == theoryTask1Answers[number][0])
                 poiMainClassAnswers.addText("№1 - " + alphabet[i] + ";");
         }
