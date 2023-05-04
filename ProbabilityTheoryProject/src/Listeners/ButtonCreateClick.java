@@ -6,6 +6,7 @@ import Functions.TheoryTask3;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.File;
 
 public class ButtonCreateClick implements ActionListener
 {
@@ -84,17 +85,27 @@ public class ButtonCreateClick implements ActionListener
         {
             if (radioButtonMany.isSelected())
             {
-                //передаю шрифт и размер
+                ////////////////////////////////////////////////////////////
+                //создаю папку по указанному пути, в которой всё сохраняем//
+                ////////////////////////////////////////////////////////////
+                new File(strSave).mkdirs();
+
+                //////////////////////////
+                //передаю шрифт и размер//
+                //////////////////////////
                 String font = String.valueOf(comboBoxFonts.getSelectedItem());
                 String f_size = String.valueOf(comboBoxSizes.getSelectedItem());
                 int fontSize = Integer.parseInt(f_size);
 
-                //передаю директорию файла с ответами
+                ///////////////////////////////////////
+                //передаю директорию файла с ответами//
+                ///////////////////////////////////////
                 String nameFileAnswers = "\\Ответы";
-                //String nameFileSaveAnswer = strSave + nameFileAnswers;
-                String nameFileSaveAnswer = "Ответы";
+                String nameFileSaveAnswer = strSave + nameFileAnswers;
 
-                //записываю в него "Ответы"
+                /////////////////////////////
+                //записываю в него "Ответы"//
+                /////////////////////////////
                 PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
                 poiMainClassAnswers.newParagraph();
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
@@ -103,10 +114,11 @@ public class ButtonCreateClick implements ActionListener
                 int kol = Integer.parseInt(strQuantity);
                 for (int i = 1; i <= kol; i++)
                 {
-                    //создаю фаылй вариантов, записываю в них номер варианта, и пишу в ответах ответы для данного варианта
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    //создаю фаылй вариантов, записываю в них номер варианта, и пишу в ответах ответы для данного варианта//
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////
                     String nameFileVariant = "\\Вариант " + i;
-                    //String nameFileSaveVariant = strSave + nameFileVariant;
-                    String nameFileSaveVariant = "Вариант" + i;
+                    String nameFileSaveVariant = strSave + nameFileVariant;
                     PoiMainClass poiMainClassVariant = new PoiMainClass(nameFileSaveVariant, font, fontSize);
                     poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addTextBoltCenter("Вариант " + i + ".");
