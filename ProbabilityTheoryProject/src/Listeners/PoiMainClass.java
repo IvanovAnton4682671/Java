@@ -8,6 +8,10 @@ import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.STJc;
 import java.io.*;
 
+/////////////////////////////////////////////////////////////////////////
+//это трогать не надо, если сломается этот класс - сломаются все задачи//
+/////////////////////////////////////////////////////////////////////////
+
 public class PoiMainClass {
     private final String nameFile;   //путь и его название
     private final XWPFDocument docx; //документ, с ним

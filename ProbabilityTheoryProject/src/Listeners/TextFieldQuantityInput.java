@@ -5,6 +5,9 @@ import java.awt.event.*;
 
 public class TextFieldQuantityInput extends KeyAdapter
 {
+    /////////////////////////////////////////
+    //передаём объект и создаём конструктор//
+    /////////////////////////////////////////
     private final JTextField textFieldQuantity;
 
     public TextFieldQuantityInput(JTextField textFieldQuantity)
@@ -12,6 +15,9 @@ public class TextFieldQuantityInput extends KeyAdapter
         this.textFieldQuantity = textFieldQuantity;
     }
 
+    ////////////////////////////////////
+    //если цифры - можно, иначе нельзя//
+    ////////////////////////////////////
     public void keyTyped(KeyEvent e)
     {
         if (Character.isDigit(e.getKeyChar()))
@@ -19,5 +25,8 @@ public class TextFieldQuantityInput extends KeyAdapter
         else e.consume();
     }
 
+    ////////////////////////////////////////////////
+    //гетер (хз для чего, джава попросила сделать)//
+    ////////////////////////////////////////////////
     public JTextField getTextFieldQuantity() { return textFieldQuantity; }
 }

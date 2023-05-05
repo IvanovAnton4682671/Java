@@ -1,9 +1,6 @@
 package Listeners;
 
-import Functions.TheoryTask1;
-import Functions.TheoryTask2;
-import Functions.TheoryTask3;
-import Functions.TheoryTask4;
+import Functions.*;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -11,6 +8,9 @@ import java.io.File;
 
 public class ButtonCreateClick implements ActionListener
 {
+    //////////////////////////////////////////
+    //передаём объекты и создаём конструктор//
+    //////////////////////////////////////////
     private final JCheckBox []checkBoxesTheory;
     private final JCheckBox []checkBoxesPractice;
     private final JTextField textFieldQuantity;
@@ -72,6 +72,9 @@ public class ButtonCreateClick implements ActionListener
 
     public void actionPerformed(ActionEvent e)
     {
+        ///////////////////////////////////////////////////////////////
+        //считаем выбранные чекбоксы, смотрим указанное кол-во и путь//
+        ///////////////////////////////////////////////////////////////
         int kolTheory = 0;
         for (JCheckBox cbt : checkBoxesTheory)
             if (cbt.isSelected())
@@ -82,8 +85,14 @@ public class ButtonCreateClick implements ActionListener
                 kolPractice++;
         String strQuantity = textFieldQuantity.getText();
         String strSave = textFieldSave.getText();
+        //////////////////////////////////
+        //если всё гуд - начинается мясо//
+        //////////////////////////////////
         if ((kolTheory > 0 || kolPractice > 0) && !strQuantity.isEmpty() && strQuantity.charAt(0) != '0' && (radioButtonMany.isSelected() || radioButtonOne.isSelected()) && !strSave.isEmpty())
         {
+            ////////////////////////////
+            //сохраняем в разные файлы//
+            ////////////////////////////
             if (radioButtonMany.isSelected())
             {
                 ////////////////////////////////////////////////////////////
@@ -112,11 +121,14 @@ public class ButtonCreateClick implements ActionListener
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
                 poiMainClassAnswers.newParagraph();
 
+                /////////////////////////////////////
+                //берём число вариантов и делаем их//
+                /////////////////////////////////////
                 int kol = Integer.parseInt(strQuantity);
                 for (int i = 1; i <= kol; i++)
                 {
                     ////////////////////////////////////////////////////////////////////////////////////////////////////////
-                    //создаю фаылй вариантов, записываю в них номер варианта, и пишу в ответах ответы для данного варианта//
+                    //создаю файлы вариантов, записываю в них номер варианта, и пишу в ответах ответы для данного варианта//
                     ////////////////////////////////////////////////////////////////////////////////////////////////////////
                     String nameFileVariant = "\\Вариант " + i;
                     String nameFileSaveVariant = strSave + nameFileVariant;
@@ -125,6 +137,9 @@ public class ButtonCreateClick implements ActionListener
                     poiMainClassVariant.addTextBoltCenter("Вариант " + i + ".");
                     poiMainClassAnswers.newParagraph();
                     poiMainClassAnswers.addText("Вариант " + i + ":");
+                    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    //просматриваем каждый чекбокс, нажат - делаем соответствующее ему задание (реализовано всрато, но я не придумал как сделать иначе)//
+                    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     if (checkBoxTheory1.isSelected())
                     {
                         TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers);
@@ -145,6 +160,11 @@ public class ButtonCreateClick implements ActionListener
                         TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers);
                         theoryTask4.theoryTask4Function();
                     }
+                    if (checkBoxTheory5.isSelected())
+                    {
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask5.theoryTask5Function();
+                    }
                     poiMainClassVariant.printToFile();
                 }
                 poiMainClassAnswers.printToFile();
@@ -153,9 +173,16 @@ public class ButtonCreateClick implements ActionListener
             {
             }
         }
+        ///////////////////////////////////////////////////////
+        //если егог - сообщаем пользователю, что он - дурачёк//
+        ///////////////////////////////////////////////////////
         else JOptionPane.showMessageDialog(null, "Пожалуйста, убедитесь, что вы ввели все данные корректно:" + "\nвыбран хотя бы 1 номер;"
                 + "\nвведено корректное число вариантов;" + "\nвыбран способ сохранения;" + "\nуказан корректный путь сохранения.");
     }
+
+    /////////////////////////////////////////////////
+    //гетеры (хз для чего, джава попросила сделать)//
+    /////////////////////////////////////////////////
     public JComboBox<String> getComboBoxFonts() { return comboBoxFonts; }
     public JComboBox<Integer> getComboBoxSizes() { return comboBoxSizes; }
     public JCheckBox getCheckBoxTheory1() { return checkBoxTheory1; }

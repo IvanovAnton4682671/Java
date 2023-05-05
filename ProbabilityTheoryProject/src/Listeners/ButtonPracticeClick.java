@@ -5,6 +5,9 @@ import java.awt.event.*;
 
 public class ButtonPracticeClick implements ActionListener
 {
+    /////////////////////////////////////////
+    //передаём объект и создаём конструктор//
+    /////////////////////////////////////////
     private final JCheckBox []checkBoxesPractice;
 
     public ButtonPracticeClick(JCheckBox []checkBoxesPractice)
@@ -12,6 +15,9 @@ public class ButtonPracticeClick implements ActionListener
         this.checkBoxesPractice = checkBoxesPractice;
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //тут всё просто - считаем кол-во нажатых чекбоксов и там уже туда-сюда (если все - отжимаем, иначе - дожимаем все)//
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void actionPerformed(ActionEvent e)
     {
         int kol = 0;
@@ -32,5 +38,8 @@ public class ButtonPracticeClick implements ActionListener
         }
     }
 
+    /////////////////////////////////////////////////
+    //гетер (хз для чего, джава попросила сделать)//
+    /////////////////////////////////////////////////
     public JCheckBox[] checkBoxesPractice() { return checkBoxesPractice; }
 }

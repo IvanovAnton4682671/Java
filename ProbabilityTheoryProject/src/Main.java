@@ -8,6 +8,9 @@ public class Main
 {
     public static void main(String[] args)
     {
+        //////////////////////////////////
+        //подключаем красоту, иначе егог//
+        //////////////////////////////////
         try
         {
             UIManager.setLookAndFeel(new FlatDarculaLaf());
@@ -17,10 +20,12 @@ public class Main
             setDefaultLookAndFeelDecorated(true);
             ex.printStackTrace();
         }
+
         new Form();
-        //
-        //тест
-        //
+
+        /////////////////////////////////////////////////////////////
+        //тестовые команды для проверки возможностей библиотеки POI//
+        /////////////////////////////////////////////////////////////
         /*String[] specialSymbols = {"xᵢ", "xᵢ₊₁", "xᵢ - xᵢ₊₁", "nᵢ", "n₃", "X̅", "ʙ", "x̅ᵧ", "ρyx", "y̅", "x̅", "y̅ₓ"};
         PoiMainClass poiMainClass = new PoiMainClass("test1", "Times New Roman", 14);
         poiMainClass.newParagraph();

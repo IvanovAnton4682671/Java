@@ -6,6 +6,9 @@ import java.awt.event.*;
 
 public class ButtonApplyClick implements ActionListener
 {
+    //////////////////////////////////////////
+    //передаём объекты и создаём конструктор//
+    //////////////////////////////////////////
     private final JComboBox<String> comboBoxFonts;
     private final JComboBox<Integer> comboBoxSizes;
     private final JTextPane textPaneVariant;
@@ -21,6 +24,9 @@ public class ButtonApplyClick implements ActionListener
 
     public void actionPerformed(ActionEvent e)
     {
+        ///////////////////////////////////////
+        //берём шрифт и размер из комбобоксов//
+        ///////////////////////////////////////
         String s_font = String.valueOf(comboBoxFonts.getSelectedItem());
         String s_size = String.valueOf(comboBoxSizes.getSelectedItem());
         int size = Integer.parseInt(s_size);
@@ -29,6 +35,9 @@ public class ButtonApplyClick implements ActionListener
         textPaneAnswers.setFont(font);
     }
 
+    /////////////////////////////////////////////////
+    //гетеры (хз для чего, джава попросила сделать)//
+    /////////////////////////////////////////////////
     public JComboBox<String> getComboBoxFonts() { return comboBoxFonts; }
     public JComboBox<Integer> getComboBoxSizes() { return comboBoxSizes; }
     public JTextPane getTextPaneVariant() { return textPaneVariant; }
