@@ -33,13 +33,13 @@ public class Main
         poiMainClass.addText("bimba");
         poiMainClass.newParagraph();
         poiMainClass.addTextBolt("aboba ");
-        poiMainClass.addText("tank");
+        poiMainClass.addText("jirafik");
         //poiMainClass.newParagraph();
         poiMainClass.initTable(2, 2);
-        poiMainClass.addTaleItem("leopard", 0, 0);
-        poiMainClass.addTaleItem("ferdinand", 0, 1);
+        poiMainClass.addTaleItem("jora", 0, 0);
+        poiMainClass.addTaleItem("kliaksa", 0, 1);
         poiMainClass.addTaleItem("brymbar", 1, 0);
-        poiMainClass.addTaleItem("is-7", 1, 1);
+        poiMainClass.addTaleItem("karandash", 1, 1);
         poiMainClass.newParagraph();
         poiMainClass.addPicture("src/dopRes/iconImage.png", 980/2, 980/2);
         poiMainClass.newParagraph();

@@ -1,6 +1,7 @@
 import Listeners.*;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Form extends JFrame
 {
@@ -93,6 +94,13 @@ public class Form extends JFrame
         /////////////////////////////////////////////////////////
         buttonApplyClick = new ButtonApplyClick(comboBoxFonts, comboBoxSizes, textPaneVariant, textPaneAnswers);
         buttonApply.addActionListener(buttonApplyClick);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //так как нельзя сделать так, чтобы при запуске кнопка была нажата, делаем применение к окнам стартовых настроек//
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        Font font = new Font("Arial", Font.PLAIN, 5);
+        textPaneVariant.setFont(font);
+        textPaneAnswers.setFont(font);
 
         ////////////////////////////////////
         //Вкладка "Сохранение и генерация"//

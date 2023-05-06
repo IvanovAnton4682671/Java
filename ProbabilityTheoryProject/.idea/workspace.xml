@@ -6,18 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a3aa9a9c-fcf4-4109-b1dc-a96b712c9ada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonApplyClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonApplyClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonPracticeClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonPracticeClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonSaveClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonSaveClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonTheoryClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonTheoryClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/PoiMainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/PoiMainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/TextFieldQuantityInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/TextFieldQuantityInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
