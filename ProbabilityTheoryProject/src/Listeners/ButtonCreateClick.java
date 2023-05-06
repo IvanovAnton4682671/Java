@@ -165,6 +165,11 @@ public class ButtonCreateClick implements ActionListener
                         TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers);
                         theoryTask5.theoryTask5Function();
                     }
+                    if (checkBoxPractice1.isSelected())
+                    {
+                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask1.practiceTask1Function();
+                    }
                     poiMainClassVariant.printToFile();
                 }
                 poiMainClassAnswers.printToFile();
