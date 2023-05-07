@@ -170,12 +170,111 @@ public class ButtonCreateClick implements ActionListener
                         PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers);
                         practiceTask1.practiceTask1Function();
                     }
+                    if (checkBoxPractice3.isSelected())
+                    {
+                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask3.practiceTask3Function();
+                    }
+                    if (checkBoxPractice5.isSelected())
+                    {
+                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask5.practiceTask5Function();
+                    }
                     poiMainClassVariant.printToFile();
                 }
                 poiMainClassAnswers.printToFile();
             }
             if (radioButtonOne.isSelected())
             {
+                ////////////////////////////////////////////////////////////
+                //создаю папку по указанному пути, в которой всё сохраняем//
+                ////////////////////////////////////////////////////////////
+                new File(strSave).mkdirs();
+
+                //////////////////////////
+                //передаю шрифт и размер//
+                //////////////////////////
+                String font = String.valueOf(comboBoxFonts.getSelectedItem());
+                String f_size = String.valueOf(comboBoxSizes.getSelectedItem());
+                int fontSize = Integer.parseInt(f_size);
+
+                ///////////////////////////////////////
+                //передаю директорию файла с ответами//
+                ///////////////////////////////////////
+                String nameFileAnswers = "\\Ответы";
+                String nameFileSaveAnswer = strSave + nameFileAnswers;
+
+                /////////////////////////////
+                //записываю в него "Ответы"//
+                /////////////////////////////
+                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
+                poiMainClassAnswers.newParagraph();
+                poiMainClassAnswers.addTextBoltCenter("Ответы.");
+                poiMainClassAnswers.newParagraph();
+
+                ////////////////////////////////////
+                //создали файл со всеми вариантами//
+                ////////////////////////////////////
+                String nameFileVariant = "\\Варианты";
+                String nameFileSaveVariant = strSave + nameFileVariant;
+                PoiMainClass poiMainClassVariant = new PoiMainClass(nameFileSaveVariant, font, fontSize);
+
+                /////////////////////////////////////
+                //берём число вариантов и делаем их//
+                /////////////////////////////////////
+                int kol = Integer.parseInt(strQuantity);
+                for (int i = 1; i <= kol; i++)
+                {
+                    poiMainClassVariant.newParagraph();
+                    poiMainClassVariant.addTextBoltCenter("Вариант " + i + ".");
+                    poiMainClassAnswers.newParagraph();
+                    poiMainClassAnswers.addText("Вариант " + i + ":");
+                    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    //просматриваем каждый чекбокс, нажат - делаем соответствующее ему задание (реализовано всрато, но я не придумал как сделать иначе)//
+                    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    if (checkBoxTheory1.isSelected())
+                    {
+                        TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask1.theoryTask1Function();
+                    }
+                    if (checkBoxTheory2.isSelected())
+                    {
+                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask2.theoryTask2Function();
+                    }
+                    if (checkBoxTheory3.isSelected())
+                    {
+                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask3.theoryTask3Function();
+                    }
+                    if (checkBoxTheory4.isSelected())
+                    {
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask4.theoryTask4Function();
+                    }
+                    if (checkBoxTheory5.isSelected())
+                    {
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers);
+                        theoryTask5.theoryTask5Function();
+                    }
+                    if (checkBoxPractice1.isSelected())
+                    {
+                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask1.practiceTask1Function();
+                    }
+                    if (checkBoxPractice3.isSelected())
+                    {
+                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask3.practiceTask3Function();
+                    }
+                    if (checkBoxPractice5.isSelected())
+                    {
+                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask5.practiceTask5Function();
+                    }
+                    poiMainClassVariant.printToFile();
+                }
+                poiMainClassAnswers.printToFile();
             }
             ///////////////////////////////////////////////////////////
             //когда всё создалось - показываем пользователю сообщение//
