@@ -39,7 +39,12 @@ public class ButtonCreateClick implements ActionListener
     private final JCheckBox checkBoxPractice13;
     private final JCheckBox checkBoxPractice14;
 
-    public ButtonCreateClick(JCheckBox []checkBoxesTheory, JCheckBox []checkBoxesPractice, JTextField textFieldQuantity, JRadioButton radioButtonMany, JRadioButton radioButtonOne, JTextField textFieldSave, JComboBox<String> comboBoxFonts, JComboBox<Integer> comboBoxSizes, JCheckBox checkBoxTheory1, JCheckBox checkBoxTheory2, JCheckBox checkBoxTheory3, JCheckBox checkBoxTheory4, JCheckBox checkBoxTheory5, JCheckBox checkBoxPractice1, JCheckBox checkBoxPractice2, JCheckBox checkBoxPractice3, JCheckBox checkBoxPractice4, JCheckBox checkBoxPractice5, JCheckBox checkBoxPractice6, JCheckBox checkBoxPractice7, JCheckBox checkBoxPractice8, JCheckBox checkBoxPractice9, JCheckBox checkBoxPractice10, JCheckBox checkBoxPractice11, JCheckBox checkBoxPractice12, JCheckBox checkBoxPractice13, JCheckBox checkBoxPractice14)
+    public ButtonCreateClick(JCheckBox []checkBoxesTheory, JCheckBox []checkBoxesPractice, JTextField textFieldQuantity, JRadioButton radioButtonMany, JRadioButton radioButtonOne,
+                             JTextField textFieldSave, JComboBox<String> comboBoxFonts, JComboBox<Integer> comboBoxSizes, JCheckBox checkBoxTheory1, JCheckBox checkBoxTheory2,
+                             JCheckBox checkBoxTheory3, JCheckBox checkBoxTheory4, JCheckBox checkBoxTheory5, JCheckBox checkBoxPractice1, JCheckBox checkBoxPractice2,
+                             JCheckBox checkBoxPractice3, JCheckBox checkBoxPractice4, JCheckBox checkBoxPractice5, JCheckBox checkBoxPractice6, JCheckBox checkBoxPractice7,
+                             JCheckBox checkBoxPractice8, JCheckBox checkBoxPractice9, JCheckBox checkBoxPractice10, JCheckBox checkBoxPractice11, JCheckBox checkBoxPractice12,
+                             JCheckBox checkBoxPractice13, JCheckBox checkBoxPractice14)
     {
         this.checkBoxesTheory = checkBoxesTheory;
         this.checkBoxesPractice = checkBoxesPractice;
@@ -180,6 +185,11 @@ public class ButtonCreateClick implements ActionListener
                         PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
                         practiceTask5.practiceTask5Function();
                     }
+                    if (checkBoxPractice13.isSelected())
+                    {
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask13.practiceTask5Function();
+                    }
                     poiMainClassVariant.printToFile();
                 }
                 poiMainClassAnswers.printToFile();
@@ -271,6 +281,11 @@ public class ButtonCreateClick implements ActionListener
                     {
                         PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
                         practiceTask5.practiceTask5Function();
+                    }
+                    if (checkBoxPractice13.isSelected())
+                    {
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask13.practiceTask5Function();
                     }
                     poiMainClassVariant.printToFile();
                 }
