@@ -22,7 +22,7 @@ public class PracticeTask13
 
     Random rand = new Random();
 
-    public void practiceTask5Function()
+    public void practiceTask13Function()
     {
         /////////////////////////
         //массив букв и ответов//
