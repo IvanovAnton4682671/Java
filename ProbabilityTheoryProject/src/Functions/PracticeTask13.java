@@ -27,7 +27,7 @@ public class PracticeTask13
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //массив букв и ответов//
         /////////////////////////
-        String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
         int[] answers = {0, 0, 0, 0};
         //////////////
         //пустой ряд//
@@ -70,16 +70,15 @@ public class PracticeTask13
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addText("18. Медиана вариационного ряда " + mas[0] + ", " + mas[1] + ", " + mas[2] + ", " + mas[3] + ", " + mas[4] + ", X, " + mas[6] + ", " + mas[7] + ", " + mas[8] + ", " + mas[9] + " равна " + med + ". Тогда значение варианты Х равно:");
+        poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
             if (i == 3)
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////

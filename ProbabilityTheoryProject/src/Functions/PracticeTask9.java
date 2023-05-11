@@ -22,15 +22,18 @@ public class PracticeTask9
 
     public void practiceTask9Function()
     {
+        //////////////////////
+        //правильно работает//
         /////////////////////////////////////////////////////////////////////////
         //массив букв, картинок-условий, их размеры, размеры остальных картинок//
         /////////////////////////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion9_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_4.png"};
-        int weight = 293;
-        int height = 145;
+        int weight = 240;
+        int height = 120;
         String[] pictures_answer = {"", "", "", ""};
-        int[][] pictures_answer_sizes = { {228, 159}, {224, 156}, {191, 153}, {217, 144} };
+        int answer_weight = 150;
+        int answer_height = 100;
         int num = rand.nextInt(0, 4);
         if (num == 0)
         {
@@ -75,18 +78,21 @@ public class PracticeTask9
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addText("14. Дан график плотности распределения вероятностей непрерывной случайной величины X (см. картинку). Тогда график её функции распределения вероятностей имеет вид:");
         poiMainClassVariant.addPicture(pictures[num], weight, height);
+        poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
-            poiMainClassVariant.newParagraph();
+            //////////////////////////////////////////////
+            //вставляем нужную картинку в вариант ответа//
+            //////////////////////////////////////////////
             poiMainClassVariant.addText(alphabet[i]);
             if (res3[i] == pictures_answer[0])
-                poiMainClassVariant.addPicture(pictures_answer[0], pictures_answer_sizes[0][0], pictures_answer_sizes[0][1]);
+                poiMainClassVariant.addPicture(pictures_answer[0], answer_weight, answer_height);
             if (res3[i] == pictures_answer[1])
-                poiMainClassVariant.addPicture(pictures_answer[1], pictures_answer_sizes[1][0], pictures_answer_sizes[1][1]);
+                poiMainClassVariant.addPicture(pictures_answer[1], answer_weight, answer_height);
             if (res3[i] == pictures_answer[2])
-                poiMainClassVariant.addPicture(pictures_answer[2], pictures_answer_sizes[2][0], pictures_answer_sizes[2][1]);
+                poiMainClassVariant.addPicture(pictures_answer[2], answer_weight, answer_height);
             if (res3[i] == pictures_answer[3])
-                poiMainClassVariant.addPicture(pictures_answer[3], pictures_answer_sizes[3][0], pictures_answer_sizes[3][1]);
+                poiMainClassVariant.addPicture(pictures_answer[3], answer_weight, answer_height);
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
             ////////////////////////////////////////////////////////////////////////////////////////////////////////

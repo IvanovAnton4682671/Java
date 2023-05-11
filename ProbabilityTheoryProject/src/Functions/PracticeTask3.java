@@ -27,7 +27,7 @@ public class PracticeTask3
         ////////////////////////////
         //массив букв и ответов//
         /////////////////////////
-        String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
         String[] answers = {"", "", "", ""};
         ///////////////////////////////////////////
         //создаём две вероятности и считаем ответ//
@@ -67,16 +67,15 @@ public class PracticeTask3
         String p_1 = String.format("%.2f", p1);
         String p_2 = String.format("%.2f", p2);
         poiMainClassVariant.addText("8. Вероятность поражения здания первой бомбой равна " + p_1 + ", а второй - " + p_2 + ". Обе бомбы сбрасывают одновременно. Тогда вероятность поражения цели равна:");
+        poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
             if (i == 3)
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////

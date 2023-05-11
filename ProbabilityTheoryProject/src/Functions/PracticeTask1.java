@@ -27,7 +27,7 @@ public class PracticeTask1
         ////////////////////////////
         //буквы, массив сумм очков//
         ////////////////////////////
-        String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
         int[] summi = {1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1};
         ////////////////////////////////
         //0 - не меньше, 1 - не больше//
@@ -79,16 +79,15 @@ public class PracticeTask1
             poiMainClassVariant.newParagraph();
             poiMainClassVariant.newParagraph();
             poiMainClassVariant.addText("6. Игральная кость бросается 2 раза. Тогда вероятность того, что сумма выпавших очков не меньше " + uslovie2 + ", равна:");
+            poiMainClassVariant.newParagraph();
             for (int i = 0; i < 4; i++)
             {
                 if (i == 3)
                 {
-                    poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
                 }
                 else
                 {
-                    poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -136,16 +135,15 @@ public class PracticeTask1
             poiMainClassVariant.newParagraph();
             poiMainClassVariant.newParagraph();
             poiMainClassVariant.addText("6. Игральная кость бросается 2 раза. Тогда вероятность того, что сумма выпавших очков не больше " + uslovie2 + ", равна:");
+            poiMainClassVariant.newParagraph();
             for (int i = 0; i < 4; i++)
             {
                 if (i == 3)
                 {
-                    poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
                 }
                 else
                 {
-                    poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////

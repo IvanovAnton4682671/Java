@@ -27,7 +27,7 @@ public class PracticeTask11
         /////////////////////////////////////////////////////////////////////////////////////
         //массив букв и случайный номер задания//
         /////////////////////////////////////////
-        String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion11_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_5.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_6.png"};
         int weight = 224;
         int height = 114;
@@ -98,16 +98,15 @@ public class PracticeTask11
         poiMainClassVariant.addText("16. Непрерывная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда её дисперсия равна:");
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addPicture(pictures[num_pic], weight, height);
+        poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
             if (i == 3)
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////

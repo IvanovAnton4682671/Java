@@ -27,7 +27,7 @@ public class PracticeTask7
         //////////////////////////////////////////////////////////////////////////
         //массив букв, картинок, ширина и высота картинок, пустой массив ответов//
         //////////////////////////////////////////////////////////////////////////
-        String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion7_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_3.png"};
         int width = 267;
         int height = 143;
@@ -138,16 +138,15 @@ public class PracticeTask7
         poiMainClassVariant.addText("12. Дискретная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда вероятность " + condition + " равна:");
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addPicture(pictures[num_pic], width, height);
+        poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
             if (i == 3)
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
