@@ -4,7 +4,7 @@ import Listeners.PoiMainClass;
 
 import java.util.*;
 
-public class PracticeTask12
+public class PracticeTask10
 {
     //////////////////////////////////////////
     //передаём объекты и создаём конструктор//
@@ -12,7 +12,7 @@ public class PracticeTask12
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
 
-    public PracticeTask12(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public PracticeTask10(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
@@ -20,7 +20,7 @@ public class PracticeTask12
 
     Random rand = new Random();
 
-    public void practiceTask12Function()
+    public void practiceTask10Function()
     {
         //////////////////////
         //правильно работает//
@@ -28,9 +28,9 @@ public class PracticeTask12
         //массив букв, картинок, ответов//
         //////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
-        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion12_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_5.png"};
-        int weight = 197;
-        int height = 99;
+        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion10_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_5.png"};
+        int weight = 266;
+        int height = 114;
         String[] answers = {"", "", "", ""};
         int num_picture = -1;
         int num = rand.nextInt(0, 5);
@@ -40,42 +40,42 @@ public class PracticeTask12
         if (num == 0)
         {
             num_picture = 0;
-            answers[0] = "3";
-            answers[1] = "6";
-            answers[2] = "1/3";
-            answers[3] = "3/8";
+            answers[0] = "8√3/3";
+            answers[1] = "2/3";
+            answers[2] = "√2/3";
+            answers[3] = "1";
         }
         if (num == 1)
         {
             num_picture = 1;
-            answers[0] = "25/12";
-            answers[1] = "10";
-            answers[2] = "5/2";
-            answers[3] = "25";
+            answers[0] = "8/3";
+            answers[1] = "√2/3";
+            answers[2] = "1/2";
+            answers[3] = "1";
         }
         if (num == 2)
         {
             num_picture = 2;
-            answers[0] = "49/12";
-            answers[1] = "14";
-            answers[2] = "7/4";
-            answers[3] = "49";
+            answers[0] = "4√3/3";
+            answers[1] = "√3/3";
+            answers[2] = "1";
+            answers[3] = "3/4";
         }
         if (num == 3)
         {
             num_picture = 3;
-            answers[0] = "4/3";
-            answers[1] = "8";
-            answers[2] = "2/5";
-            answers[3] = "4";
+            answers[0] = "4";
+            answers[1] = "√2/3";
+            answers[2] = "1/2";
+            answers[3] = "0";
         }
         if (num == 4)
         {
             num_picture = 4;
-            answers[0] = "16/3";
-            answers[1] = "32";
-            answers[2] = "8/11";
-            answers[3] = "15";
+            answers[0] = "2";
+            answers[1] = "√3/3";
+            answers[2] = "1";
+            answers[3] = "1/2";
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //танцы с бубном ака шафл(перемешивание) массива ответов: делаем массив, в него их передаём, переводим его в лист, шаффлим лист, переводим обратно в массив (как допёр - сам не знаю)//
@@ -90,7 +90,7 @@ public class PracticeTask12
             res3[i] = res2.get(i);
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addText("17. Непрерывная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда её дисперсия равна:");
+        poiMainClassVariant.addText("15. Непрерывная случайная величина Х задана плотностью распределения вероятностей (см. картинку). Тогда значение параметра С равно:");
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addPicture(pictures[num_picture], weight, height);
         poiMainClassVariant.newParagraph();
@@ -108,7 +108,7 @@ public class PracticeTask12
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
-                poiMainClassAnswers.addText("№17 - " + alphabet[i] + ";");
+                poiMainClassAnswers.addText("№15 - " + alphabet[i] + ";");
         }
     }
 }
