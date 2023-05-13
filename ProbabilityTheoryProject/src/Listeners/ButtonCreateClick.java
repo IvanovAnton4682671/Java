@@ -200,6 +200,11 @@ public class ButtonCreateClick implements ActionListener
                         PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers);
                         practiceTask11.practiceTask11Function();
                     }
+                    if (checkBoxPractice12.isSelected())
+                    {
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask12.practiceTask12Function();
+                    }
                     if (checkBoxPractice13.isSelected())
                     {
                         PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers);
@@ -316,6 +321,11 @@ public class ButtonCreateClick implements ActionListener
                     {
                         PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers);
                         practiceTask11.practiceTask11Function();
+                    }
+                    if (checkBoxPractice12.isSelected())
+                    {
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers);
+                        practiceTask12.practiceTask12Function();
                     }
                     if (checkBoxPractice13.isSelected())
                     {
