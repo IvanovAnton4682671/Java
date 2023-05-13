@@ -43,7 +43,7 @@ public class Main
         poiMainClass.newParagraph();
         poiMainClass.addPicture("src/dopRes/iconImage.png", 980/2, 980/2);
         poiMainClass.newParagraph();
-        poiMainClass.addText(specialSymbols[3] + "kek" + 5);
+        poiMainClass.addText(specialSymbols[3] + "ok" + 5);
         poiMainClass.printToFile();*/
     }
 }

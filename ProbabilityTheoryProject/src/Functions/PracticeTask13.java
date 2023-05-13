@@ -27,7 +27,7 @@ public class PracticeTask13
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //массив букв и ответов//
         /////////////////////////
-        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
+        String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         int[] answers = {0, 0, 0, 0};
         //////////////
         //пустой ряд//
@@ -75,11 +75,11 @@ public class PracticeTask13
         {
             if (i == 3)
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + "; ");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//

@@ -27,7 +27,7 @@ public class PracticeTask11
         /////////////////////////////////////////////////////////////////////////////////////
         //массив букв и случайный номер задания//
         /////////////////////////////////////////
-        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
+        String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion11_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_5.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_6.png"};
         int weight = 224;
         int height = 114;
@@ -103,11 +103,11 @@ public class PracticeTask11
         {
             if (i == 3)
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + "; ");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//

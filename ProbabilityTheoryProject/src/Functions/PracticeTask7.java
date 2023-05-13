@@ -27,7 +27,7 @@ public class PracticeTask7
         //////////////////////////////////////////////////////////////////////////
         //массив букв, картинок, ширина и высота картинок, пустой массив ответов//
         //////////////////////////////////////////////////////////////////////////
-        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
+        String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion7_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_3.png"};
         int width = 267;
         int height = 143;
@@ -143,11 +143,11 @@ public class PracticeTask7
         {
             if (i == 3)
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + ".");
             }
             else
             {
-                poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + "; ");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//

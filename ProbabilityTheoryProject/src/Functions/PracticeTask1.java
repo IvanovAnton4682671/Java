@@ -27,7 +27,7 @@ public class PracticeTask1
         ////////////////////////////
         //буквы, массив сумм очков//
         ////////////////////////////
-        String[] alphabet = {"А) ", " Б) ", " В) ", " Г) "};
+        String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         int[] summi = {1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1};
         ////////////////////////////////
         //0 - не меньше, 1 - не больше//
@@ -84,11 +84,11 @@ public class PracticeTask1
             {
                 if (i == 3)
                 {
-                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                    poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + ".");
                 }
                 else
                 {
-                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                    poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + "; ");
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
@@ -140,11 +140,11 @@ public class PracticeTask1
             {
                 if (i == 3)
                 {
-                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ".");
+                    poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + ".");
                 }
                 else
                 {
-                    poiMainClassVariant.addText(alphabet[i] + res3[i] + ";");
+                    poiMainClassVariant.addText(alphabet[i] + " " + res3[i] + "; ");
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
