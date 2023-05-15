@@ -9,6 +9,8 @@ import java.io.File;
 public class ButtonCreateClick implements ActionListener
 {
     //////////////////////////////////////////
+    //самая главная кнопка, делает все файлы//
+    //////////////////////////////////////////
     //передаём объекты и создаём конструктор//
     //////////////////////////////////////////
     private final JCheckBox []checkBoxesTheory;

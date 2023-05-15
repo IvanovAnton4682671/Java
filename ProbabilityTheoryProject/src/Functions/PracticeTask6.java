@@ -34,7 +34,7 @@ public class PracticeTask6
         String sub_answer = "";
         String row1_1 = "";
         String row1_2 = "";
-        int num = rand.nextInt(0, 5);
+        int num = rand.nextInt(0, 7);
         if (num == 0)
         {
             sub_answer = "0,6";
@@ -84,6 +84,26 @@ public class PracticeTask6
             answers_1[0] = "0,2"; answers_1[1] = "0,13"; answers_1[2] = "0,17";
             answers_2[0] = "0,03"; answers_2[1] = "0,14"; answers_2[2] = "0,45";
             answers_3[0] = "0,7"; answers_3[1] = "0,01"; answers_3[2] = "0,2";
+        }
+        if (num == 5)
+        {
+            sub_answer = "0,8";
+            row1_1 = "0,31";
+            row1_2 = "0,12";
+            answers_0[0] = "0,4"; answers_0[1] = "0,09"; answers_0[2] = "0,08";
+            answers_1[0] = "0,41"; answers_1[1] = "0,01"; answers_1[2] = "0,17";
+            answers_2[0] = "0,2"; answers_2[1] = "0,13"; answers_2[2] = "0,45";
+            answers_3[0] = "0,7"; answers_3[1] = "0,21"; answers_3[2] = "0,01";
+        }
+        if (num == 6)
+        {
+            sub_answer = "0,3";
+            row1_1 = "0,11";
+            row1_2 = "0,08";
+            answers_0[0] = "0,11"; answers_0[1] = "0,08"; answers_0[2] = "0,62";
+            answers_1[0] = "0,35"; answers_1[1] = "0,07"; answers_1[2] = "0,17";
+            answers_2[0] = "0,21"; answers_2[1] = "0,13"; answers_2[2] = "0,34";
+            answers_3[0] = "0,65"; answers_3[1] = "0,23"; answers_3[2] = "0,03";
         }
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //тут не простой шаффл, а очень замудрённый (тут перемешиваются сами массивы в массиве массивов, не их элементы)//
