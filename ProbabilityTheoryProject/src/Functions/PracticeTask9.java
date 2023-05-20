@@ -1,7 +1,8 @@
 package Functions;
 
 import Listeners.PoiMainClass;
-
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import java.util.*;
 
 public class PracticeTask9
@@ -78,26 +79,150 @@ public class PracticeTask9
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.addText("14. Дан график плотности распределения вероятностей непрерывной случайной величины X (см. картинку). Тогда график её функции распределения вероятностей имеет вид:");
         poiMainClassVariant.addPicture(pictures[num], weight, height);
-        poiMainClassVariant.newParagraph();
+        XWPFDocument docx = poiMainClassVariant.getDocx();
+        XWPFParagraph paragraph1 = docx.createParagraph();
+        XWPFParagraph paragraph2 = docx.createParagraph();
         for (int i = 0; i < 4; i++)
         {
+            if (i == 2)
+            {
+                if (res3[i] == pictures_answer[0])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[0], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[0], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[1])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[1], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[1], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[2])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[2], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[2], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[3])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[3], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[3], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                if (res3[i] == pictures_answer[0])
+                    poiMainClassAnswers.addText("№14 - " + alphabet[i] + ";");
+            }
             //////////////////////////////////////////////
             //вставляем нужную картинку в вариант ответа//
             //////////////////////////////////////////////
-            poiMainClassVariant.addText(alphabet[i]);
-            if (res3[i] == pictures_answer[0])
-                poiMainClassVariant.addPicture(pictures_answer[0], answer_weight, answer_height);
-            if (res3[i] == pictures_answer[1])
-                poiMainClassVariant.addPicture(pictures_answer[1], answer_weight, answer_height);
-            if (res3[i] == pictures_answer[2])
-                poiMainClassVariant.addPicture(pictures_answer[2], answer_weight, answer_height);
-            if (res3[i] == pictures_answer[3])
-                poiMainClassVariant.addPicture(pictures_answer[3], answer_weight, answer_height);
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if (res3[i] == pictures_answer[0])
-                poiMainClassAnswers.addText("№14 - " + alphabet[i] + ";");
+            else
+            {
+                if (res3[i] == pictures_answer[0])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[0], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[0], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[1])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[1], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[1], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[2])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[2], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[2], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                if (res3[i] == pictures_answer[3])
+                {
+                    if (i == 0 || i == 2)
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
+                        poiMainClassVariant.addPictureLeft(pictures_answer[3], answer_weight, answer_height, paragraph1);
+                    }
+                    else
+                    {
+                        poiMainClassVariant.addText(alphabet[i]);
+                        //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
+                        poiMainClassVariant.addPictureRight(pictures_answer[3], answer_weight, answer_height, paragraph2);
+                    }
+                }
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
+                ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                if (res3[i] == pictures_answer[0])
+                    poiMainClassAnswers.addText("№14 - " + alphabet[i] + ";");
+            }
         }
     }
 }

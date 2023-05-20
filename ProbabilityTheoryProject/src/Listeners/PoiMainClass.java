@@ -30,6 +30,9 @@ public class PoiMainClass {
         paragraph = docx.createParagraph();
         run = paragraph.createRun();
     }
+    public XWPFDocument getDocx(){
+        return docx;
+    }
     public void addHeader(String str){
         addTextBoltCenter(str);
         newParagraph();
@@ -54,6 +57,20 @@ public class PoiMainClass {
         run.setFontSize(fontSize);
         run.setText(str);
         run.addTab();
+        run.setFontFamily(font);
+    }
+    public void addTextLeft(String str, XWPFParagraph paragraph1){
+        run = paragraph1.createRun();
+        run.setFontSize(fontSize);
+        run.setText(str);
+        //run.addTab();
+        run.setFontFamily(font);
+    }
+    public void addTextRight(String str, XWPFParagraph paragraph2){
+        run = paragraph2.createRun();
+        run.setFontSize(fontSize);
+        run.setText(str);
+        //run.addTab();
         run.setFontFamily(font);
     }
     public void addTextArray(int[] array){
@@ -118,7 +135,6 @@ public class PoiMainClass {
             a++;
         }
     }
-
     public void addPicture(String picture, int width, int height){
         File image = new File(picture);
         FileInputStream imageData = null;
@@ -134,6 +150,46 @@ public class PoiMainClass {
                     Units.toEMU(width),
                     Units.toEMU(height));
             run.addBreak();
+        } catch (InvalidFormatException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void addPictureLeft(String picture, int width, int height, XWPFParagraph paragraph1){
+        paragraph1.setAlignment(ParagraphAlignment.LEFT);
+        File image = new File(picture);
+        FileInputStream imageData = null;
+        try {
+            imageData = new FileInputStream(image);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        int imageType = XWPFDocument.PICTURE_TYPE_JPEG;
+        String imageFileName = image.getName();
+        try {
+            run.addPicture(imageData, imageType, imageFileName,
+                    Units.toEMU(width),
+                    Units.toEMU(height));
+            //run.addBreak();
+        } catch (InvalidFormatException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void addPictureRight(String picture, int width, int height, XWPFParagraph paragraph2){
+        paragraph2.setAlignment(ParagraphAlignment.RIGHT);
+        File image = new File(picture);
+        FileInputStream imageData = null;
+        try {
+            imageData = new FileInputStream(image);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        int imageType = XWPFDocument.PICTURE_TYPE_JPEG;
+        String imageFileName = image.getName();
+        try {
+            run.addPicture(imageData, imageType, imageFileName,
+                    Units.toEMU(width),
+                    Units.toEMU(height));
+            //run.addBreak();
         } catch (InvalidFormatException | IOException e) {
             throw new RuntimeException(e);
         }

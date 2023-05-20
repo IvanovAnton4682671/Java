@@ -55,7 +55,7 @@ public class Form extends JFrame
         setSize(600, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Программа-генератор");
-        ImageIcon img = new ImageIcon("src/dopRes/iconImage.png");
+        ImageIcon img = new ImageIcon("src\\dopRes\\iconImage.png");
         setIconImage(img.getImage());
         setVisible(true);
         setResizable(false);
