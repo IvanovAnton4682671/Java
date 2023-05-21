@@ -84,19 +84,20 @@ public class PracticeTask9
         XWPFParagraph paragraph2 = docx.createParagraph();
         for (int i = 0; i < 4; i++)
         {
+            String str_sup = "               ";
             if (i == 2)
             {
                 if (res3[i] == pictures_answer[0])
                 {
                     if (i == 0 || i == 2)
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
                         poiMainClassVariant.addPictureLeft(pictures_answer[0], answer_weight, answer_height, paragraph1);
                     }
                     else
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
                         poiMainClassVariant.addPictureRight(pictures_answer[0], answer_weight, answer_height, paragraph2);
                     }
@@ -105,13 +106,13 @@ public class PracticeTask9
                 {
                     if (i == 0 || i == 2)
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
                         poiMainClassVariant.addPictureLeft(pictures_answer[1], answer_weight, answer_height, paragraph1);
                     }
                     else
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
                         poiMainClassVariant.addPictureRight(pictures_answer[1], answer_weight, answer_height, paragraph2);
                     }
@@ -120,13 +121,13 @@ public class PracticeTask9
                 {
                     if (i == 0 || i == 2)
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
                         poiMainClassVariant.addPictureLeft(pictures_answer[2], answer_weight, answer_height, paragraph1);
                     }
                     else
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
                         poiMainClassVariant.addPictureRight(pictures_answer[2], answer_weight, answer_height, paragraph2);
                     }
@@ -135,13 +136,13 @@ public class PracticeTask9
                 {
                     if (i == 0 || i == 2)
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextLeft(alphabet[i], paragraph1);
                         poiMainClassVariant.addPictureLeft(pictures_answer[3], answer_weight, answer_height, paragraph1);
                     }
                     else
                     {
-                        poiMainClassVariant.addText("               " + alphabet[i]);
+                        poiMainClassVariant.addText(str_sup + alphabet[i]);
                         //poiMainClassVariant.addTextRight(alphabet[i], paragraph2);
                         poiMainClassVariant.addPictureRight(pictures_answer[3], answer_weight, answer_height, paragraph2);
                     }

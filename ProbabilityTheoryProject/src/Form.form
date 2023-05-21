@@ -403,7 +403,7 @@
                   <opaque value="true"/>
                   <selectedTextColor color="-7881822"/>
                   <selectionColor color="-11173237"/>
-                  <text value="Вариант 1&#10;&#10;1)Какое-то задание&#10;А)1&#10;Б)2&#10;В)3&#10;Г)4&#10;&#10;2)Какое-то другое задание&#10;А)1&#10;Б)2&#10;В)3&#10;Г)4"/>
+                  <text value="Вариант 1&#10;&#10;1)Какое-то задание&#10;А)1&#10;Б)2&#10;В)3&#10;Г)4&#10;&#10;2)Какое-то другое задание&#10;А)1; Б)2; В)3; Г)4."/>
                 </properties>
               </component>
               <component id="263cc" class="javax.swing.JTextPane" binding="textPaneAnswers">

@@ -3,8 +3,10 @@ package Listeners;
 import Functions.*;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.IOException;
 
 public class ButtonCreateClick implements ActionListener
 {
@@ -401,6 +403,22 @@ public class ButtonCreateClick implements ActionListener
                 JOptionPane.showMessageDialog(null, "Ваш " + kol + " вариант готов и находится по пути " + strSave);
             else
                 JOptionPane.showMessageDialog(null, "Ваши варианты в количестве " + kol + " готовы и находятся по пути " + strSave);
+            ///////////////////////////////////////////
+            //открываем папку с созданными вариантами//
+            ///////////////////////////////////////////
+            Desktop desktop = null;
+            if (Desktop.isDesktopSupported())
+            {
+                desktop = Desktop.getDesktop();
+            }
+            try
+            {
+                desktop.open(new File(strSave));
+            }
+            catch (IOException ioe)
+            {
+                ioe.printStackTrace();
+            }
         }
         //////////////////////////////////////////////////////////
         //если егог - сообщаем пользователю, что он что-то забыл//
