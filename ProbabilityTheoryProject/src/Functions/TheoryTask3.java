@@ -11,11 +11,13 @@ public class TheoryTask3
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    final int font_size;
 
-    public TheoryTask3(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public TheoryTask3(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.font_size = font_size;
     }
 
     /////////////////////////////
@@ -74,7 +76,12 @@ public class TheoryTask3
         if (number == 7)
         {
             String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion28_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion28_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion28_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion28_d.png"};
-            int[][] resSizes = { {33, 33}, {22, 20}, {10, 18}, {53, 17} };
+            int[][] resSizes = { {0, 0}, {0, 0}, {0, 0}, {0, 0} };
+            if (font_size == 10) { resSizes = new int[][] { {20, 20}, {10, 10}, {5, 10}, {45, 10} }; }
+            if (font_size == 12) { resSizes = new int[][] { {25, 25}, {15, 15}, {8, 12}, {48, 12} }; }
+            if (font_size == 14) { resSizes = new int[][] { {30, 30}, {20, 20}, {10, 15}, {50, 15} }; }
+            if (font_size == 16) { resSizes = new int[][] { {35, 35}, {25, 25}, {12, 17}, {52, 28} }; }
+            if (font_size == 18) { resSizes = new int[][] { {40, 40}, {30, 30}, {15, 20}, {55, 20} }; }
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();
@@ -96,8 +103,15 @@ public class TheoryTask3
         //////////////////////////////////////////////////
         else if (number == 9)
         {
+            int width = 0;
+            int height = 0;
+            if (font_size == 10) { width = 130; height = 60;}
+            if (font_size == 12) { width = 140; height = 65;}
+            if (font_size == 14) { width = 150; height = 70;}
+            if (font_size == 16) { width = 160; height = 75;}
+            if (font_size == 18) { width = 170; height = 80;}
             poiMainClassVariant.newParagraph();
-            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion30.png", 157, 71);
+            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion30.png", width, height);
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();

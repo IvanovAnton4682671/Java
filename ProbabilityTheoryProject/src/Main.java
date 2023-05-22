@@ -22,31 +22,5 @@ public class Main
         }
 
         new Form();
-
-        /////////////////////////////////////////////////////////////
-        //тестовые команды для проверки возможностей библиотеки POI//
-        /////////////////////////////////////////////////////////////
-        /*String[] specialSymbols = {"xᵢ", "xᵢ₊₁", "xᵢ - xᵢ₊₁", "nᵢ", "n₃", "X̅", "ʙ", "x̅ᵧ", "ρyx", "y̅", "x̅", "y̅ₓ"};
-        PoiMainClass poiMainClass = new PoiMainClass("test1", "Times New Roman", 14);
-        poiMainClass.newParagraph();
-        poiMainClass.addText("test2");
-        poiMainClass.addText("bimba");
-        poiMainClass.newParagraph();
-        poiMainClass.addTextBolt("aboba ");
-        poiMainClass.addText("jirafik");
-        //poiMainClass.newParagraph();
-        poiMainClass.initTable(2, 2);
-        poiMainClass.addTaleItem("jora", 0, 0);
-        poiMainClass.addTaleItem("kliaksa", 0, 1);
-        poiMainClass.addTaleItem("brymbar", 1, 0);
-        poiMainClass.addTaleItem("karandash", 1, 1);
-        poiMainClass.newParagraph();
-        poiMainClass.addPicture("src/dopRes/iconImage.png", 980/2, 980/2);
-        poiMainClass.newParagraph();
-        poiMainClass.addText(specialSymbols[3] + "ok" + 5);
-        poiMainClass.printToFile();*/
-        /////////////////////
-        //3223 строчек кода//
-        /////////////////////
     }
 }

@@ -11,11 +11,13 @@ public class PracticeTask11
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    final int font_size;
 
-    public PracticeTask11(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public PracticeTask11(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.font_size = font_size;
     }
 
     Random rand = new Random();
@@ -29,8 +31,13 @@ public class PracticeTask11
         /////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion11_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_5.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_6.png"};
-        int weight = 224;
-        int height = 114;
+        int weight = 0;
+        int height = 0;
+        if (font_size == 10) { weight = 140; height = 70;}
+        if (font_size == 12) { weight = 160; height = 80;}
+        if (font_size == 14) { weight = 180; height = 100;}
+        if (font_size == 16) { weight = 190; height = 105;}
+        if (font_size == 18) { weight = 200; height = 110;}
         int num_pic = 0;
         String[] answers = {"", "", "", ""};
         int num = rand.nextInt(0, 6);

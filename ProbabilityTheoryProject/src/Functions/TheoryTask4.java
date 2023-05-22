@@ -11,11 +11,13 @@ public class TheoryTask4
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    final int font_size;
 
-    public TheoryTask4(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public TheoryTask4(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.font_size = font_size;
     }
 
     /////////////////////////////
@@ -70,8 +72,15 @@ public class TheoryTask4
         //////////////////////////////////////////////////
         if (number == 0)
         {
+            int width = 0;
+            int height = 0;
+            if (font_size == 10) { width = 110; height = 40;}
+            if (font_size == 12) { width = 120; height = 45;}
+            if (font_size == 14) { width = 130; height = 50;}
+            if (font_size == 16) { width = 140; height = 55;}
+            if (font_size == 18) { width = 150; height = 60;}
             poiMainClassVariant.newParagraph();
-            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion31.png", 133, 53);
+            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion31.png", width, height);
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();
@@ -85,8 +94,15 @@ public class TheoryTask4
         //////////////////////////////////////////////////
         else if (number == 1)
         {
+            int width = 0;
+            int height = 0;
+            if (font_size == 10) { width = 130; height = 40;}
+            if (font_size == 12) { width = 140; height = 45;}
+            if (font_size == 14) { width = 150; height = 50;}
+            if (font_size == 16) { width = 160; height = 55;}
+            if (font_size == 18) { width = 170; height = 60;}
             poiMainClassVariant.newParagraph();
-            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion32.png", 149, 50);
+            poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion32.png", width, height);
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();
@@ -105,8 +121,15 @@ public class TheoryTask4
                 poiMainClassVariant.newParagraph();
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
+                    int width = 0;
+                    int height = 0;
+                    if (font_size == 10) { width = 150; height = 30;}
+                    if (font_size == 12) { width = 170; height = 35;}
+                    if (font_size == 14) { width = 200; height = 40;}
+                    if (font_size == 16) { width = 210; height = 45;}
+                    if (font_size == 18) { width = 220; height = 50;}
                     poiMainClassVariant.addText(alphabet[i] + res3[i]);
-                    poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion36.png", 202, 37);
+                    poiMainClassVariant.addPicture("src\\dopRes\\theoryQuestion\\theoryQuestion36.png", width, height);
                 }
                 else
                     poiMainClassVariant.addText(alphabet[i] + res3[i]);
@@ -121,7 +144,12 @@ public class TheoryTask4
         else if (number == 8 || number == 9)
         {
             String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_d.png"};
-            int[][] resSizes = { {28, 34}, {16, 37}, {14, 21}, {156, 20} };
+            int[][] resSizes = { {0, 0}, {0, 0}, {0, 0}, {0, 0} };
+            if (font_size == 10) { resSizes = new int[][] { {20, 25}, {10, 20}, {10, 15}, {110, 15} }; }
+            if (font_size == 12) { resSizes = new int[][] { {25, 30}, {13, 30}, {12, 17}, {130, 18} }; }
+            if (font_size == 14) { resSizes = new int[][] { {30, 35}, {15, 35}, {15, 20}, {150, 20} }; }
+            if (font_size == 16) { resSizes = new int[][] { {35, 40}, {18, 37}, {17, 23}, {160, 25} }; }
+            if (font_size == 18) { resSizes = new int[][] { {40, 45}, {20, 40}, {20, 25}, {170, 30} }; }
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();

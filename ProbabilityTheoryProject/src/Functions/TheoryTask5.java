@@ -11,11 +11,13 @@ public class TheoryTask5
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    final int font_size;
 
-    public TheoryTask5(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public TheoryTask5(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.font_size = font_size;
     }
 
     /////////////////////////////
@@ -69,7 +71,12 @@ public class TheoryTask5
         if (number == 0)
         {
             String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion39_40_41_d.png"};
-            int[][] resSizes = { {28, 34}, {16, 37}, {14, 21}, {156, 20} };
+            int[][] resSizes = { {0, 0}, {0, 0}, {0, 0}, {0, 0} };
+            if (font_size == 10) { resSizes = new int[][] { {20, 25}, {10, 20}, {10, 15}, {110, 15} }; }
+            if (font_size == 12) { resSizes = new int[][] { {25, 30}, {13, 30}, {12, 17}, {130, 18} }; }
+            if (font_size == 14) { resSizes = new int[][] { {30, 35}, {15, 35}, {15, 20}, {150, 20} }; }
+            if (font_size == 16) { resSizes = new int[][] { {35, 40}, {18, 37}, {17, 23}, {160, 25} }; }
+            if (font_size == 18) { resSizes = new int[][] { {40, 45}, {20, 40}, {20, 25}, {170, 30} }; }
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();
@@ -93,7 +100,12 @@ public class TheoryTask5
         else if (number == 5)
         {
             String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion46_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion46_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion46_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion46_d.png"};
-            int[][] resSizes = { {79, 26}, {80, 25}, {70, 35}, {74, 29} };
+            int[][] resSizes = { {0, 0}, {0, 0}, {0, 0}, {0, 0} };
+            if (font_size == 10) { resSizes = new int[][] { {60, 20}, {60, 20}, {60, 25}, {60, 25} }; }
+            if (font_size == 12) { resSizes = new int[][] { {70, 20}, {70, 20}, {65, 30}, {65, 30} }; }
+            if (font_size == 14) { resSizes = new int[][] { {80, 25}, {80, 25}, {70, 35}, {70, 35} }; }
+            if (font_size == 16) { resSizes = new int[][] { {85, 30}, {85, 30}, {75, 40}, {75, 40} }; }
+            if (font_size == 18) { resSizes = new int[][] { {90, 35}, {90, 35}, {80, 45}, {80, 45} }; }
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();
@@ -118,6 +130,11 @@ public class TheoryTask5
         {
             String[] resImages = {"src\\dopRes\\theoryQuestion\\theoryQuestion49_50_51_52_a.png", "src\\dopRes\\theoryQuestion\\theoryQuestion49_50_51_52_b.png", "src\\dopRes\\theoryQuestion\\theoryQuestion49_50_51_52_c.png", "src\\dopRes\\theoryQuestion\\theoryQuestion49_50_51_52_d.png"};
             int[][] resSizes = { {24, 21}, {20, 20}, {21, 34}, {50, 36} };
+            if (font_size == 10) { resSizes = new int[][] { {20, 15}, {15, 15}, {15, 25}, {40, 25} }; }
+            if (font_size == 12) { resSizes = new int[][] { {23, 18}, {18, 18}, {18, 30}, {45, 30} }; }
+            if (font_size == 14) { resSizes = new int[][] { {25, 20}, {20, 20}, {20, 35}, {50, 35} }; }
+            if (font_size == 16) { resSizes = new int[][] { {27, 22}, {23, 23}, {23, 40}, {55, 40} }; }
+            if (font_size == 18) { resSizes = new int[][] { {30, 25}, {25, 25}, {25, 43}, {60, 45} }; }
             for (int i = 0; i < 4; i++)
             {
                 poiMainClassVariant.newParagraph();

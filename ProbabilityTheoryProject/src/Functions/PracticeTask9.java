@@ -12,11 +12,13 @@ public class PracticeTask9
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    final int font_size;
 
-    public PracticeTask9(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public PracticeTask9(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.font_size = font_size;
     }
 
     Random rand = new Random();
@@ -30,8 +32,13 @@ public class PracticeTask9
         /////////////////////////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion9_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion9_4.png"};
-        int weight = 240;
-        int height = 120;
+        int weight = 0;
+        int height = 0;
+        if (font_size == 10) { weight = 160; height = 70;}
+        if (font_size == 12) { weight = 170; height = 80;}
+        if (font_size == 14) { weight = 180; height = 90;}
+        if (font_size == 16) { weight = 190; height = 100;}
+        if (font_size == 18) { weight = 200; height = 110;}
         String[] pictures_answer = {"", "", "", ""};
         int answer_weight = 150;
         int answer_height = 100;

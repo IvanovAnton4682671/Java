@@ -156,22 +156,22 @@ public class ButtonCreateClick implements ActionListener
                     }
                     if (checkBoxTheory2.isSelected())
                     {
-                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask2.theoryTask2Function();
                     }
                     if (checkBoxTheory3.isSelected())
                     {
-                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask3.theoryTask3Function();
                     }
                     if (checkBoxTheory4.isSelected())
                     {
-                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask4.theoryTask4Function();
                     }
                     if (checkBoxTheory5.isSelected())
                     {
-                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask5.theoryTask5Function();
                     }
                     if (checkBoxPractice1.isSelected())
@@ -206,32 +206,32 @@ public class ButtonCreateClick implements ActionListener
                     }
                     if (checkBoxPractice7.isSelected())
                     {
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask7.practiceTask7Function();
                     }
                     if (checkBoxPractice8.isSelected())
                     {
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask8.practiceTask8Function();
                     }
                     if (checkBoxPractice9.isSelected())
                     {
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask9.practiceTask9Function();
                     }
                     if (checkBoxPractice10.isSelected())
                     {
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask10.practiceTask10Function();
                     }
                     if (checkBoxPractice11.isSelected())
                     {
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask11.practiceTask11Function();
                     }
                     if (checkBoxPractice12.isSelected())
                     {
-                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask12.practiceTask12Function();
                     }
                     if (checkBoxPractice13.isSelected())
@@ -303,22 +303,22 @@ public class ButtonCreateClick implements ActionListener
                     }
                     if (checkBoxTheory2.isSelected())
                     {
-                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask2.theoryTask2Function();
                     }
                     if (checkBoxTheory3.isSelected())
                     {
-                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask3.theoryTask3Function();
                     }
                     if (checkBoxTheory4.isSelected())
                     {
-                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask4.theoryTask4Function();
                     }
                     if (checkBoxTheory5.isSelected())
                     {
-                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers);
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         theoryTask5.theoryTask5Function();
                     }
                     if (checkBoxPractice1.isSelected())
@@ -353,32 +353,32 @@ public class ButtonCreateClick implements ActionListener
                     }
                     if (checkBoxPractice7.isSelected())
                     {
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask7.practiceTask7Function();
                     }
                     if (checkBoxPractice8.isSelected())
                     {
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask8.practiceTask8Function();
                     }
                     if (checkBoxPractice9.isSelected())
                     {
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask9.practiceTask9Function();
                     }
                     if (checkBoxPractice10.isSelected())
                     {
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask10.practiceTask10Function();
                     }
                     if (checkBoxPractice11.isSelected())
                     {
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask11.practiceTask11Function();
                     }
                     if (checkBoxPractice12.isSelected())
                     {
-                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers);
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize);
                         practiceTask12.practiceTask12Function();
                     }
                     if (checkBoxPractice13.isSelected())

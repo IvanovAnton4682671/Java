@@ -475,17 +475,11 @@
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
                   <model>
-                    <item value="5"/>
-                    <item value="9"/>
                     <item value="10"/>
                     <item value="12"/>
                     <item value="14"/>
+                    <item value="16"/>
                     <item value="18"/>
-                    <item value="20"/>
-                    <item value="26"/>
-                    <item value="28"/>
-                    <item value="36"/>
-                    <item value="48"/>
                   </model>
                 </properties>
               </component>
