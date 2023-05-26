@@ -12,12 +12,16 @@ public class TheoryTask4
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
     final int font_size;
+    int num;
+    int var;
 
-    public TheoryTask4(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
+    public TheoryTask4(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
         this.font_size = font_size;
+        this.num = num;
+        this.var = var;
     }
 
     /////////////////////////////
@@ -86,7 +90,10 @@ public class TheoryTask4
                 poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         //////////////////////////////////////////////////
@@ -108,7 +115,10 @@ public class TheoryTask4
                 poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         //////////////////////////////////////////////////
@@ -134,7 +144,10 @@ public class TheoryTask4
                 else
                     poiMainClassVariant.addText(alphabet[i] + res3[i]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -163,7 +176,10 @@ public class TheoryTask4
                 if (res3[i] == "Нет верного ответа")
                     poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         else
@@ -187,7 +203,10 @@ public class TheoryTask4
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
     }

@@ -12,12 +12,16 @@ public class TheoryTask3
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
     final int font_size;
+    int num;
+    int var;
 
-    public TheoryTask3(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
+    public TheoryTask3(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
         this.font_size = font_size;
+        this.num = num;
+        this.var = var;
     }
 
     /////////////////////////////
@@ -95,7 +99,10 @@ public class TheoryTask3
                 if (res3[i] == "1 - e^(it)")
                     poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
                 if (res3[i] == theoryTask3Answers[number][0])
-                    poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         //////////////////////////////////////////////////
@@ -117,7 +124,10 @@ public class TheoryTask3
                 poiMainClassVariant.newParagraph();
                 poiMainClassVariant.addText(alphabet[i] + res3[i]);
                 if (res3[i] == theoryTask3Answers[number][0])
-                    poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         else
@@ -141,7 +151,10 @@ public class TheoryTask3
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if (res3[i] == theoryTask3Answers[number][0])
-                    poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
     }

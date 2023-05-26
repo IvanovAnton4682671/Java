@@ -12,12 +12,16 @@ public class TheoryTask5
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
     final int font_size;
+    int num;
+    int var;
 
-    public TheoryTask5(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
+    public TheoryTask5(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
         this.font_size = font_size;
+        this.num = num;
+        this.var = var;
     }
 
     /////////////////////////////
@@ -90,7 +94,10 @@ public class TheoryTask5
                 if (res3[i] == "Нет верного ответа")
                     poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -119,7 +126,10 @@ public class TheoryTask5
                 if (res3[i] == "σ(x) = e^(DX)")
                     poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -148,7 +158,10 @@ public class TheoryTask5
                 if (res3[i] == "(a - b)²/12")
                     poiMainClassVariant.addPicture(resImages[3], resSizes[3][0], resSizes[3][1]);
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         else
@@ -172,7 +185,10 @@ public class TheoryTask5
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if (res3[i] == theoryTask4Answers[number][0])
-                    poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
     }

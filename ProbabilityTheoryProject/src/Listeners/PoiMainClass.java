@@ -3,10 +3,10 @@ package Listeners;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.util.Units;
 import org.apache.poi.xwpf.usermodel.*;
-import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTJc;
-import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr;
-import org.openxmlformats.schemas.wordprocessingml.x2006.main.STJc;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.*;
+
 import java.io.*;
+import java.math.BigInteger;
 
 /////////////////////////////////////////////////////////////////////////
 //это трогать не надо, если сломается этот класс - сломаются все задачи//
@@ -102,7 +102,8 @@ public class PoiMainClass {
     public void initTable(int row, int col){
         table = docx.createTable(row, col);
         setTableAlign(table, ParagraphAlignment.CENTER);
-        table.setCellMargins(5, 200, 5, 200);
+        //table.setCellMargins(5, 200, 5, 200);
+        table.setCellMargins(5, 100, 5, 100);
     }
     public void addTaleItem(String str, int row, int col){
         paragraph = table.getRow(row).getCell(col).getParagraphs().get(0);
@@ -203,4 +204,19 @@ public class PoiMainClass {
             throw new RuntimeException(e);
         }
     }
+
+    /*public void changeOrientation()
+    {
+        CTDocument1 doc1 = docx.getDocument();
+        CTBody body = doc1.getBody();
+        if (!body.isSetSectPr())
+            body.addNewSectPr();
+        CTSectPr section = body.getSectPr();
+        if (!section.isSetPgSz())
+            section.addNewPgSz();
+        CTPageSz pageSize = section.getPgSz();
+        pageSize.setW(BigInteger.valueOf(15840));
+        pageSize.setH(BigInteger.valueOf(12240));
+        pageSize.setOrient(STPageOrientation.LANDSCAPE);
+    }*/
 }

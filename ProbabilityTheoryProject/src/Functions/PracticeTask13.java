@@ -11,11 +11,15 @@ public class PracticeTask13
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    int num;
+    int var;
 
-    public PracticeTask13(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public PracticeTask13(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.num = num;
+        this.var = var;
     }
 
     Random rand = new Random();
@@ -85,7 +89,10 @@ public class PracticeTask13
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
-                poiMainClassAnswers.addText("№18 - " + alphabet[i] + ";");
+            {
+                //poiMainClassAnswers.addText("№18 - " + alphabet[i] + ";");
+                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+            }
         }
     }
 }

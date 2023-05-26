@@ -11,11 +11,15 @@ public class PracticeTask1
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    int num;
+    int var;
 
-    public PracticeTask1(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public PracticeTask1(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.num = num;
+        this.var = var;
     }
 
     Random rand = new Random();
@@ -94,7 +98,10 @@ public class PracticeTask1
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if (res3[i] == answers[0])
-                    poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
         else
@@ -150,7 +157,10 @@ public class PracticeTask1
                 //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////
                 if (res3[i] == answers[0])
-                    poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
+                {
+                    //poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
+                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                }
             }
         }
     }

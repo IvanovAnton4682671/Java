@@ -12,12 +12,16 @@ public class PracticeTask12
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
     final int font_size;
+    int num1;
+    int var;
 
-    public PracticeTask12(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size)
+    public PracticeTask12(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num1, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
         this.font_size = font_size;
+        this.num1 = num1;
+        this.var = var;
     }
 
     Random rand = new Random();
@@ -115,7 +119,10 @@ public class PracticeTask12
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
-                poiMainClassAnswers.addText("№17 - " + alphabet[i] + ";");
+            {
+                //poiMainClassAnswers.addText("№17 - " + alphabet[i] + ";");
+                poiMainClassAnswers.addTaleItem(alphabet[i], num1, var);
+            }
         }
     }
 }

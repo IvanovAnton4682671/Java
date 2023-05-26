@@ -92,6 +92,7 @@ public class ButtonCreateClick implements ActionListener
         for (JCheckBox cbp : checkBoxesPractice)
             if (cbp.isSelected())
                 kolPractice++;
+        int generalKol = kolTheory + kolPractice;
         String strQuantity = textFieldQuantity.getText();
         String strSave = textFieldSave.getText();
         //////////////////////////////////
@@ -125,17 +126,47 @@ public class ButtonCreateClick implements ActionListener
                 /////////////////////////////
                 //записываю в него "Ответы"//
                 /////////////////////////////
-                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
+                //PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
+                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, 10);
                 poiMainClassAnswers.newParagraph();
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
+                ///////////////////////////////////////////////////////////////////////////////////
+                //создаю таблицу с ответами, заполняю её вариантами и выбранными задачами(шаблон)//
+                ///////////////////////////////////////////////////////////////////////////////////
+                int kol = Integer.parseInt(strQuantity);
                 poiMainClassAnswers.newParagraph();
+                poiMainClassAnswers.initTable((kol + 1), (generalKol + 1));
+                for (int q = 1; q <= kol; q++)
+                    poiMainClassAnswers.addTaleItem("Вар " + q, q, 0);
+                int var = 1;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (checkBoxesTheory[i].isSelected())
+                    {
+                        poiMainClassAnswers.addTaleItem(String.valueOf(i + 1), 0, var);
+                        var++;
+                    }
+                }
+                for (int i = 0; i < 14; i++)
+                {
+                    if (checkBoxesPractice[i].isSelected())
+                    {
+                        poiMainClassAnswers.addTaleItem(String.valueOf(i + 6), 0, var);
+                        var++;
+                    }
+                }
+                //poiMainClassAnswers.newParagraph();
 
                 /////////////////////////////////////
                 //берём число вариантов и делаем их//
                 /////////////////////////////////////
-                int kol = Integer.parseInt(strQuantity);
+                kol = Integer.parseInt(strQuantity);
                 for (int i = 1; i <= kol; i++)
                 {
+                    //////////////////////////////////////////////////////////////////////////////
+                    //передаём номер колонки, увеличиваем каждый раз, как записываем в неё номер//
+                    //////////////////////////////////////////////////////////////////////////////
+                    var = 1;
                     ////////////////////////////////////////////////////////////////////////////////////////////////////////
                     //создаю файлы вариантов, записываю в них номер варианта, и пишу в ответах ответы для данного варианта//
                     ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -144,105 +175,146 @@ public class ButtonCreateClick implements ActionListener
                     PoiMainClass poiMainClassVariant = new PoiMainClass(nameFileSaveVariant, font, fontSize);
                     poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addTextBoltCenter("Вариант " + i + ".");
-                    poiMainClassAnswers.newParagraph();
-                    poiMainClassAnswers.addText("Вариант " + i + ":");
+                    //poiMainClassAnswers.newParagraph();
+                    //poiMainClassAnswers.addText("Вариант " + i + ":");
                     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     //просматриваем каждый чекбокс, нажат - делаем соответствующее ему задание (реализовано всрато, но я не придумал как сделать иначе)//
                     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     if (checkBoxTheory1.isSelected())
                     {
-                        TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers);
+                        //////////////////////////////////////////////////////////////////////////////////////////
+                        //передаём номер строки в таблице, чтобы записывать в строку с соответствующим вариантом//
+                        //////////////////////////////////////////////////////////////////////////////////////////
+                        int num = i;
+                        TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
                         theoryTask1.theoryTask1Function();
+                        var++;
                     }
                     if (checkBoxTheory2.isSelected())
                     {
-                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask2.theoryTask2Function();
+                        var++;
                     }
                     if (checkBoxTheory3.isSelected())
                     {
-                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask3.theoryTask3Function();
+                        var++;
                     }
                     if (checkBoxTheory4.isSelected())
                     {
-                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask4.theoryTask4Function();
+                        var++;
                     }
                     if (checkBoxTheory5.isSelected())
                     {
-                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask5.theoryTask5Function();
+                        var++;
                     }
                     if (checkBoxPractice1.isSelected())
                     {
-                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask1.practiceTask1Function();
+                        var++;
                     }
                     if (checkBoxPractice2.isSelected())
                     {
-                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask2.practiceTask2Function();
+                        var++;
                     }
                     if (checkBoxPractice3.isSelected())
                     {
-                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask3.practiceTask3Function();
+                        var++;
                     }
                     if (checkBoxPractice4.isSelected())
                     {
-                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask4.practiceTask4Function();
+                        var++;
                     }
                     if (checkBoxPractice5.isSelected())
                     {
-                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask5.practiceTask5Function();
+                        var++;
                     }
                     if (checkBoxPractice6.isSelected())
                     {
-                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask6.practiceTask6Function();
+                        var++;
                     }
                     if (checkBoxPractice7.isSelected())
                     {
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask7.practiceTask7Function();
+                        var++;
                     }
                     if (checkBoxPractice8.isSelected())
                     {
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask8.practiceTask8Function();
+                        var++;
                     }
                     if (checkBoxPractice9.isSelected())
                     {
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask9.practiceTask9Function();
+                        var++;
                     }
                     if (checkBoxPractice10.isSelected())
                     {
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask10.practiceTask10Function();
+                        var++;
                     }
                     if (checkBoxPractice11.isSelected())
                     {
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask11.practiceTask11Function();
+                        var++;
                     }
                     if (checkBoxPractice12.isSelected())
                     {
-                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask12.practiceTask12Function();
+                        var++;
                     }
                     if (checkBoxPractice13.isSelected())
                     {
-                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask13.practiceTask13Function();
+                        var++;
                     }
                     if (checkBoxPractice14.isSelected())
                     {
-                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask14.practiceTask14Function();
+                        var++;
                     }
                     poiMainClassVariant.printToFile();
                 }
@@ -271,10 +343,36 @@ public class ButtonCreateClick implements ActionListener
                 /////////////////////////////
                 //записываю в него "Ответы"//
                 /////////////////////////////
-                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
+                //PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
+                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, 10);
                 poiMainClassAnswers.newParagraph();
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
+                ///////////////////////////////////////////////////////////////////////////////////
+                //создаю таблицу с ответами, заполняю её вариантами и выбранными задачами(шаблон)//
+                ///////////////////////////////////////////////////////////////////////////////////
+                int kol = Integer.parseInt(strQuantity);
                 poiMainClassAnswers.newParagraph();
+                poiMainClassAnswers.initTable((kol + 1), (generalKol + 1));
+                for (int q = 1; q <= kol; q++)
+                    poiMainClassAnswers.addTaleItem("Вар " + q, q, 0);
+                int var = 1;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (checkBoxesTheory[i].isSelected())
+                    {
+                        poiMainClassAnswers.addTaleItem(String.valueOf(i + 1), 0, var);
+                        var++;
+                    }
+                }
+                for (int i = 0; i < 14; i++)
+                {
+                    if (checkBoxesPractice[i].isSelected())
+                    {
+                        poiMainClassAnswers.addTaleItem(String.valueOf(i + 6), 0, var);
+                        var++;
+                    }
+                }
+                //poiMainClassAnswers.newParagraph();
 
                 ////////////////////////////////////
                 //создали файл со всеми вариантами//
@@ -286,110 +384,149 @@ public class ButtonCreateClick implements ActionListener
                 /////////////////////////////////////
                 //берём число вариантов и делаем их//
                 /////////////////////////////////////
-                int kol = Integer.parseInt(strQuantity);
+                kol = Integer.parseInt(strQuantity);
                 for (int i = 1; i <= kol; i++)
                 {
+                    var = 1;
                     poiMainClassVariant.newParagraph();
                     poiMainClassVariant.addTextBoltCenter("Вариант " + i + ".");
-                    poiMainClassAnswers.newParagraph();
-                    poiMainClassAnswers.addText("Вариант " + i + ":");
+                    //poiMainClassAnswers.newParagraph();
+                    //poiMainClassAnswers.addText("Вариант " + i + ":");
                     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     //просматриваем каждый чекбокс, нажат - делаем соответствующее ему задание (реализовано всрато, но я не придумал как сделать иначе)//
                     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     if (checkBoxTheory1.isSelected())
                     {
-                        TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers);
+                         int num = i;
+                        TheoryTask1 theoryTask1 = new TheoryTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
                         theoryTask1.theoryTask1Function();
+                        var++;
                     }
                     if (checkBoxTheory2.isSelected())
                     {
-                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask2 theoryTask2 = new TheoryTask2(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask2.theoryTask2Function();
+                        var++;
                     }
                     if (checkBoxTheory3.isSelected())
                     {
-                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask3 theoryTask3 = new TheoryTask3(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask3.theoryTask3Function();
+                        var++;
                     }
                     if (checkBoxTheory4.isSelected())
                     {
-                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask4 theoryTask4 = new TheoryTask4(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask4.theoryTask4Function();
+                        var++;
                     }
                     if (checkBoxTheory5.isSelected())
                     {
-                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        TheoryTask5 theoryTask5 = new TheoryTask5(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         theoryTask5.theoryTask5Function();
+                        var++;
                     }
                     if (checkBoxPractice1.isSelected())
                     {
-                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask1.practiceTask1Function();
+                        var++;
                     }
                     if (checkBoxPractice2.isSelected())
                     {
-                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask2.practiceTask2Function();
+                        var++;
                     }
                     if (checkBoxPractice3.isSelected())
                     {
-                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask3.practiceTask3Function();
+                        var++;
                     }
                     if (checkBoxPractice4.isSelected())
                     {
-                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask4.practiceTask4Function();
+                        var++;
                     }
                     if (checkBoxPractice5.isSelected())
                     {
-                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask5.practiceTask5Function();
+                        var++;
                     }
                     if (checkBoxPractice6.isSelected())
                     {
-                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask6.practiceTask6Function();
+                        var++;
                     }
                     if (checkBoxPractice7.isSelected())
                     {
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask7.practiceTask7Function();
+                        var++;
                     }
                     if (checkBoxPractice8.isSelected())
                     {
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask8.practiceTask8Function();
+                        var++;
                     }
                     if (checkBoxPractice9.isSelected())
                     {
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask9.practiceTask9Function();
+                        var++;
                     }
                     if (checkBoxPractice10.isSelected())
                     {
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask10.practiceTask10Function();
+                        var++;
                     }
                     if (checkBoxPractice11.isSelected())
                     {
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask11.practiceTask11Function();
+                        var++;
                     }
                     if (checkBoxPractice12.isSelected())
                     {
-                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize);
+                        int num = i;
+                        PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask12.practiceTask12Function();
+                        var++;
                     }
                     if (checkBoxPractice13.isSelected())
                     {
-                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask13.practiceTask13Function();
+                        var++;
                     }
                     if (checkBoxPractice14.isSelected())
                     {
-                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers);
+                        int num = i;
+                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask14.practiceTask14Function();
+                        var++;
                     }
                     poiMainClassVariant.printToFile();
                 }

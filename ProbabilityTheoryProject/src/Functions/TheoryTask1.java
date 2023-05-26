@@ -11,11 +11,15 @@ public class TheoryTask1
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
+    int num;
+    int var;
 
-    public TheoryTask1(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers)
+    public TheoryTask1(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
+        this.num = num;
+        this.var = var;
     }
 
     /////////////////////////////
@@ -78,7 +82,10 @@ public class TheoryTask1
             //записываем букву ответа в файл ответов (хитрость в том, что ответы всегда на первом месте в массиве)//
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == theoryTask1Answers[number][0])
-                poiMainClassAnswers.addText("№1 - " + alphabet[i] + ";");
+            {
+                //poiMainClassAnswers.addText("№1 - " + alphabet[i] + ";");
+                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+            }
         }
     }
 }
