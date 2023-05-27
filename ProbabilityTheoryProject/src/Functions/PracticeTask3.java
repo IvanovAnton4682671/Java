@@ -32,6 +32,7 @@ public class PracticeTask3
         //массив букв и ответов//
         /////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] answers = {"", "", "", ""};
         ///////////////////////////////////////////
         //создаём две вероятности и считаем ответ//
@@ -88,7 +89,7 @@ public class PracticeTask3
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№8 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
     }

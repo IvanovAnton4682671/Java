@@ -32,6 +32,7 @@ public class PracticeTask1
         //буквы, массив сумм очков//
         ////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         int[] summi = {1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1};
         ////////////////////////////////
         //0 - не меньше, 1 - не больше//
@@ -100,7 +101,7 @@ public class PracticeTask1
                 if (res3[i] == answers[0])
                 {
                     //poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -159,7 +160,7 @@ public class PracticeTask1
                 if (res3[i] == answers[0])
                 {
                     //poiMainClassAnswers.addText("№6 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }

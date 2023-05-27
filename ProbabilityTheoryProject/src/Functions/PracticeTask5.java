@@ -32,6 +32,7 @@ public class PracticeTask5
         //массив букв и ответов//
         /////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] answers = {"", "", "", ""};
         /////////////////////////////////////////////////////////////////////////////////////////
         //отдельный массив вероятностей (чтобы были красивые, ровные числа, пожалеем студентов)//
@@ -96,7 +97,7 @@ public class PracticeTask5
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№10 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
     }

@@ -37,6 +37,7 @@ public class TheoryTask2
         //буквы ответов, вопросы и ответы к ним//
         /////////////////////////////////////////
         String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] theoryTask2Questions = {"Что означает операция А+В?", "Что означает операция АВ?", "Выберите НЕВЕРНОЕ утверждение:",
                 "A и B - независимые события. Тогда справедливо следующее утверждение:", "Равномерное распределение случайной величины имеет вид:",
                 "Распределение Пуассона случайной величины имеет вид:", "Биномиальное распределение случайной величины имеет вид:", "Распределение Бернулли случайной величины имеет вид:",
@@ -99,7 +100,7 @@ public class TheoryTask2
                 if (res3[i] == theoryTask2Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -130,7 +131,7 @@ public class TheoryTask2
                 if (res3[i] == theoryTask2Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -157,7 +158,7 @@ public class TheoryTask2
                 if (res3[i] == theoryTask2Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№2 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }

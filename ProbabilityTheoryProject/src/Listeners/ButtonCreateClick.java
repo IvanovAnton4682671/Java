@@ -127,7 +127,19 @@ public class ButtonCreateClick implements ActionListener
                 //записываю в него "Ответы"//
                 /////////////////////////////
                 //PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
-                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, 10);
+                String fontTable = "Times New Roman";
+                int fontSizeTable = 10;
+                if (generalKol < 14)
+                    fontSizeTable = 18;
+                else if (generalKol < 16)
+                    fontSizeTable = 16;
+                else if (generalKol < 17)
+                    fontSizeTable = 14;
+                else if (generalKol < 19)
+                    fontSizeTable = 12;
+                else if (generalKol < 20)
+                    fontSizeTable = 11;
+                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, fontTable, fontSizeTable);
                 poiMainClassAnswers.newParagraph();
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
                 ///////////////////////////////////////////////////////////////////////////////////
@@ -344,7 +356,19 @@ public class ButtonCreateClick implements ActionListener
                 //записываю в него "Ответы"//
                 /////////////////////////////
                 //PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, fontSize);
-                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, font, 10);
+                String fontTable = "Times New Roman";
+                int fontSizeTable = 10;
+                if (generalKol < 14)
+                    fontSizeTable = 18;
+                else if (generalKol < 16)
+                    fontSizeTable = 16;
+                else if (generalKol < 17)
+                    fontSizeTable = 14;
+                else if (generalKol < 19)
+                    fontSizeTable = 12;
+                else if (generalKol < 20)
+                    fontSizeTable = 11;
+                PoiMainClass poiMainClassAnswers = new PoiMainClass(nameFileSaveAnswer, fontTable, fontSizeTable);
                 poiMainClassAnswers.newParagraph();
                 poiMainClassAnswers.addTextBoltCenter("Ответы.");
                 ///////////////////////////////////////////////////////////////////////////////////

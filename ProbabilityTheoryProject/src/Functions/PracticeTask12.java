@@ -34,6 +34,7 @@ public class PracticeTask12
         //массив букв, картинок, ответов//
         //////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion12_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_5.png"};
         int weight = 0;
         int height = 0;
@@ -121,7 +122,7 @@ public class PracticeTask12
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№17 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num1, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
             }
         }
     }

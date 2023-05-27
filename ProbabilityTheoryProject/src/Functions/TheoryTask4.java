@@ -37,6 +37,7 @@ public class TheoryTask4
         //буквы ответов, вопросы и ответы к ним//
         /////////////////////////////////////////
         String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] theoryTask4Questions = {"Определите закон распределения непрерывной случайной величины, если плотность распределения имеет вид (см. картинку):",
                 "Определите закон распределения непрерывной случайной величины, если плотность распределения имеет вид (см. картинку):", "Выберете НЕВЕРНОЕ утверждение:",
                 "Двумерная случайная величина называется непрерывной, если её функция распределения -", "Плотность распределения вероятностей непрерывной двумерной случайной величины – это:",
@@ -92,7 +93,7 @@ public class TheoryTask4
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -117,7 +118,7 @@ public class TheoryTask4
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -146,7 +147,7 @@ public class TheoryTask4
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -178,7 +179,7 @@ public class TheoryTask4
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -205,7 +206,7 @@ public class TheoryTask4
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№4 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }

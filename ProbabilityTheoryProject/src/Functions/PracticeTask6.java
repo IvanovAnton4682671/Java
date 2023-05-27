@@ -30,6 +30,7 @@ public class PracticeTask6
         //массив букв, ответа и несколько других вариантов//
         ////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] answers_0 = {"", "", ""};
         String[] answers_1 = {"", "", ""};
         String[] answers_2 = {"", "", ""};
@@ -155,7 +156,7 @@ public class PracticeTask6
             if (res3[i][0] == answers_0[0] && res3[i][1] == answers_0[1] && res3[i][2] == answers_0[2])
             {
                 //poiMainClassAnswers.addText("№11 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num1, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
             }
         }
     }

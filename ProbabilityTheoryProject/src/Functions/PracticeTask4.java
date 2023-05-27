@@ -32,6 +32,7 @@ public class PracticeTask4
         //массив букв, ответы, яблоки//
         ///////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] answers = {"", "", "", ""};
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //чтобы получить целое число типа double (чтоб было 5.0, а не 5.343434112) ипользую перевод в строку, а из неё в дабл (напрямую как-то сложно)//
@@ -92,7 +93,7 @@ public class PracticeTask4
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№9 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
     }

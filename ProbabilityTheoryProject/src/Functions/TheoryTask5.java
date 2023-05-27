@@ -37,6 +37,7 @@ public class TheoryTask5
         //буквы ответов, вопросы и ответы к ним//
         /////////////////////////////////////////
         String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] theoryTask5Questions = {"Чему равно математическое ожидание при равномерном распределении на интервале [a,b]?", "Какой вероятности соответствует медиана?",
                 "Вставьте пропуск: если Х - непрерывная случайная величина, то мода - ... плотности распределения.",
                 "Числом, равным математическому ожиданию квадрата отклонения случайной величины от её математического ожидания называют:", "Выберете НЕВЕРНОЕ:",
@@ -96,7 +97,7 @@ public class TheoryTask5
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -128,7 +129,7 @@ public class TheoryTask5
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -160,7 +161,7 @@ public class TheoryTask5
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -187,7 +188,7 @@ public class TheoryTask5
                 if (res3[i] == theoryTask4Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№5 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }

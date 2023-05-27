@@ -35,6 +35,7 @@ public class TheoryTask1
         //буквы ответов, вопросы и ответы к ним//
         /////////////////////////////////////////
         String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] theoryTask1Questions = {"Элементарное событие – это:", "Событие – это:", "Вероятность – это:", "Вероятность наступления некоторого события НЕ МОЖЕТ быть равна:",
                 "P(A+B) = (сложение вероятностей):", "Случайное событие – это:", "Случайная величина есть:", "Функция распределения случайной величины есть:",
                 "Вероятность того, что непрерывная случайная величина примет конкретное значение равна:", "Какие значения может принимать функция распределения?"};
@@ -84,7 +85,7 @@ public class TheoryTask1
             if (res3[i] == theoryTask1Answers[number][0])
             {
                 //poiMainClassAnswers.addText("№1 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
     }

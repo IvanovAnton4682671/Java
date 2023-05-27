@@ -37,6 +37,7 @@ public class TheoryTask3
         //буквы ответов, вопросы и ответы к ним//
         /////////////////////////////////////////
         String[] alphabet = {"А) ", "Б) ", "В) ", "Г) "};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] theoryTask3Questions = {"Парный коэффициент корреляции r(X Y), изменяется в пределах:", "Парный коэффициент корреляции равен –1. Это означает:",
                 "Вероятности появления заданного числа благоприятных исходов в схеме Бернулли описываются:", "Математического ожидания не существует у случайной величины:",
                 "Закон больших чисел выводится из неравенства Чебышева при условии существования у случайной величины:", "Характеристическая функция случайной величины есть:",
@@ -101,7 +102,7 @@ public class TheoryTask3
                 if (res3[i] == theoryTask3Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -126,7 +127,7 @@ public class TheoryTask3
                 if (res3[i] == theoryTask3Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }
@@ -153,7 +154,7 @@ public class TheoryTask3
                 if (res3[i] == theoryTask3Answers[number][0])
                 {
                     //poiMainClassAnswers.addText("№3 - " + alphabet[i] + ";");
-                    poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                    poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
                 }
             }
         }

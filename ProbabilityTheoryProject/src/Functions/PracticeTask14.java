@@ -32,6 +32,7 @@ public class PracticeTask14
         //массив букв, ответов, сам ряд//
         /////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         int[] mas = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         int[] answers = {0, 0, 0, 0};
         for (int i = 0; i < 11; i++)
@@ -77,7 +78,7 @@ public class PracticeTask14
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№19 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
         poiMainClassVariant.newParagraph();

@@ -32,6 +32,7 @@ public class PracticeTask2
         //массив букв, ответов, случайный радиус (от него не зависит правильный ответ)//
         ////////////////////////////////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
+        String[] alphabetTable = {"А", "Б", "В", "Г"};
         String[] answers = {"", "", "", ""};
         int r = rand.nextInt(2, 7);
         String sub_answer = "";
@@ -83,7 +84,7 @@ public class PracticeTask2
             if (res3[i] == answers[0])
             {
                 //poiMainClassAnswers.addText("№7 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabet[i], num1, var);
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
             }
         }
     }
