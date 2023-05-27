@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProbabilityTheoryProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aa9a9c-fcf4-4109-b1dc-a96b712c9ada" name="Changes" comment="Добавил сообщения пользователю об успехе создания вариантов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/PracticeTask9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/PracticeTask9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/TheoryTask5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/TheoryTask5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/ButtonCreateClick.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programming/TheJavaProbabilityTheoryProject/ProbabilityTheoryProject&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Programming/TheJavaProbabilityTheoryProject/ProbabilityTheoryProject",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
