@@ -96,7 +96,7 @@ public class PracticeTask9
         XWPFParagraph paragraph2 = docx.createParagraph();
         for (int i = 0; i < 4; i++)
         {
-            String str_sup = "               ";
+            String str_sup = "                                             ";
             if (i == 2)
             {
                 if (res3[i] == pictures_answer[0])
