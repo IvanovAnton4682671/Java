@@ -4,7 +4,7 @@ import Listeners.PoiMainClass;
 
 import java.util.*;
 
-public class PracticeTask13
+public class PracticeTask16
 {
     //////////////////////////////////////////
     //передаём объекты и создаём конструктор//
@@ -15,7 +15,7 @@ public class PracticeTask13
     int num1;
     int var;
 
-    public PracticeTask13(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num1, int var)
+    public PracticeTask16(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num1, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
@@ -26,16 +26,16 @@ public class PracticeTask13
 
     Random rand = new Random();
 
-    public void practiceTask13Function()
+    public void practiceTask16Function()
     {
-        //////////////////////
-        //правильно работает//
-        //////////////////////////////////
-        //массив букв, картинок, ответов//
-        //////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////
+        //вроде правильно всё делает, только варианты ответов не красивые, но что поделать?//
+        /////////////////////////////////////////////////////////////////////////////////////
+        //массив букв и случайный номер задания//
+        /////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] alphabetTable = {"А", "Б", "В", "Г"};
-        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion8_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion8_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion8_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion8_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion8_5.png"};
+        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion11_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_5.png", "src\\dopRes\\practiceQuestion\\practiceQuestion11_6.png"};
         int weight = 0;
         int height = 0;
         if (font_size == 10) { weight = 140; height = 70;}
@@ -43,57 +43,56 @@ public class PracticeTask13
         if (font_size == 14) { weight = 180; height = 100;}
         if (font_size == 16) { weight = 190; height = 105;}
         if (font_size == 18) { weight = 200; height = 110;}
+        int num_pic = 0;
         String[] answers = {"", "", "", ""};
-        int num_picture = -1;
-        String ver = "";
-        int num = rand.nextInt(0, 5);
-        ///////////////////////////////////////////////////////////////
-        //в зависимости от условия выюираем картинку и ответы под неё//
-        ///////////////////////////////////////////////////////////////
+        int num = rand.nextInt(0, 6);
         if (num == 0)
         {
-            num_picture = 0;
-            answers[0] = "63/64";
-            answers[1] = "2/5";
-            answers[2] = "1";
-            answers[3] = "8/13";
-            ver = "P(1 < Х < 4)";
+            num_pic = 0;
+            answers[0] = "38/81";
+            answers[1] = "1/10";
+            answers[2] = "39/81";
+            answers[3] = "5/13";
         }
         if (num == 1)
         {
-            num_picture = 1;
-            answers[0] = "3/5";
-            answers[1] = "0";
-            answers[2] = "1";
-            answers[3] = "2/3";
-            ver = "P(1 < Х < 4)";
+            num_pic = 1;
+            answers[0] = "25/648";
+            answers[1] = "3/5";
+            answers[2] = "10/121";
+            answers[3] = "37/502";
         }
         if (num == 2)
         {
-            num_picture = 2;
-            answers[0] = "171/32";
-            answers[1] = "18/31";
-            answers[2] = "1";
-            answers[3] = "5/4";
-            ver = "P(1 < Х < 7)";
+            num_pic = 2;
+            answers[0] = "3/5";
+            answers[1] = "2/5";
+            answers[2] = "2/3";
+            answers[3] = "1/2";
         }
         if (num == 3)
         {
-            num_picture = 3;
-            answers[0] = "5/24";
-            answers[1] = "1/2";
-            answers[2] = "0";
-            answers[3] = "10/13";
-            ver = "P(1 < Х < 2)";
+            num_pic = 3;
+            answers[0] = "59/1280";
+            answers[1] = "37/808";
+            answers[2] = "2/5";
+            answers[3] = "101/200";
         }
         if (num == 4)
         {
-            num_picture = 4;
-            answers[0] = "31/25";
-            answers[1] = "3/4";
-            answers[2] = "7/8";
-            answers[3] = "2";
-            ver = "P(1 < Х < 2)";
+            num_pic = 4;
+            answers[0] = "928/1875";
+            answers[1] = "501/1103";
+            answers[2] = "2/9";
+            answers[3] = "17/81";
+        }
+        if (num == 5)
+        {
+            num_pic = 5;
+            answers[0] = "119/3750";
+            answers[1] = "108/2003";
+            answers[2] = "8/17";
+            answers[3] = "1/3";
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //танцы с бубном ака шафл(перемешивание) массива ответов: делаем массив, в него их передаём, переводим его в лист, шаффлим лист, переводим обратно в массив (как допёр - сам не знаю)//
@@ -108,9 +107,9 @@ public class PracticeTask13
             res3[i] = res2.get(i);
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addText("13. Непрерывная случайная величина Х задана плотностью распределения вероятностей (см. картинку). Тогда вероятность " + ver + " равна:");
+        poiMainClassVariant.addText("16. Непрерывная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда её дисперсия равна:");
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addPicture(pictures[num_picture], weight, height);
+        poiMainClassVariant.addPicture(pictures[num_pic], weight, height);
         poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
@@ -127,7 +126,7 @@ public class PracticeTask13
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
             {
-                //poiMainClassAnswers.addText("№13 - " + alphabet[i] + ";");
+                //poiMainClassAnswers.addText("№16 - " + alphabet[i] + ";");
                 poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
             }
         }

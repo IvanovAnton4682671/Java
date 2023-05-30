@@ -28,66 +28,111 @@ public class PracticeTask12
 
     public void practiceTask12Function()
     {
-        //////////////////////
-        //правильно работает//
-        //////////////////////////////////
-        //массив букв, картинок, ответов//
-        //////////////////////////////////
+        ////////////////////////
+        //правильно всё делает//
+        //////////////////////////////////////////////////////////////////////////
+        //массив букв, картинок, ширина и высота картинок, пустой массив ответов//
+        //////////////////////////////////////////////////////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] alphabetTable = {"А", "Б", "В", "Г"};
-        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion12_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion12_5.png"};
-        int weight = 0;
+        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion7_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion7_3.png"};
+        int width = 0;
         int height = 0;
-        if (font_size == 10) { weight = 140; height = 70;}
-        if (font_size == 12) { weight = 160; height = 80;}
-        if (font_size == 14) { weight = 180; height = 100;}
-        if (font_size == 16) { weight = 190; height = 105;}
-        if (font_size == 18) { weight = 200; height = 110;}
+        if (font_size == 10) { width = 140; height = 70;}
+        if (font_size == 12) { width = 160; height = 80;}
+        if (font_size == 14) { width = 180; height = 100;}
+        if (font_size == 16) { width = 190; height = 105;}
+        if (font_size == 18) { width = 200; height = 110;}
         String[] answers = {"", "", "", ""};
-        int num_picture = -1;
-        int num = rand.nextInt(0, 5);
-        ///////////////////////////////////////////////////////////////
-        //в зависимости от условия выюираем картинку и ответы под неё//
-        ///////////////////////////////////////////////////////////////
-        if (num == 0)
+        int num_pic = 0;
+        String condition = "";
+        int num = rand.nextInt(0, 9);
+        ///////////////////////////////////////
+        //уловия, от которых завист сам номер//
+        ///////////////////////////////////////
+        if (num == 0 || num == 1 || num == 2)
         {
-            num_picture = 0;
-            answers[0] = "3";
-            answers[1] = "6";
-            answers[2] = "1/3";
-            answers[3] = "3/8";
+            num_pic = 0;
+            if (num == 0)
+            {
+                answers[0] = "0,6";
+                answers[1] = "0";
+                answers[2] = "0,5";
+                answers[3] = "0,3";
+                condition = "P(1<X⩽3)";
+            }
+            if (num == 1)
+            {
+                answers[0] = "0,3";
+                answers[1] = "0,7";
+                answers[2] = "0,1";
+                answers[3] = "0,5";
+                condition = "P(2<X⩽4)";
+            }
+            if (num == 2)
+            {
+                answers[0] = "0,7";
+                answers[1] = "0,5";
+                answers[2] = "0,3";
+                answers[3] = "0,2";
+                condition = "P(1⩽X<3)";
+            }
         }
-        if (num == 1)
+        if (num == 3 || num == 4 || num == 5)
         {
-            num_picture = 1;
-            answers[0] = "25/12";
-            answers[1] = "10";
-            answers[2] = "5/2";
-            answers[3] = "25";
+            num_pic = 1;
+            if (num == 3)
+            {
+                answers[0] = "0,8";
+                answers[1] = "0,3";
+                answers[2] = "0,9";
+                answers[3] = "0,5";
+                condition = "P(2<X⩽4)";
+            }
+            if (num == 4)
+            {
+                answers[0] = "0,5";
+                answers[1] = "0,2";
+                answers[2] = "0";
+                answers[3] = "0,8";
+                condition = "P(3<X⩽5)";
+            }
+            if (num == 5)
+            {
+                answers[0] = "0,5";
+                answers[1] = "0,9";
+                answers[2] = "0,1";
+                answers[3] = "0,2";
+                condition = "P(2⩽X<4)";
+            }
         }
-        if (num == 2)
+        if (num == 6 || num == 7 || num == 8)
         {
-            num_picture = 2;
-            answers[0] = "49/12";
-            answers[1] = "14";
-            answers[2] = "7/4";
-            answers[3] = "49";
-        }
-        if (num == 3)
-        {
-            num_picture = 3;
-            answers[0] = "4/3";
-            answers[1] = "8";
-            answers[2] = "2/5";
-            answers[3] = "4";
-        }
-        if (num == 4)
-        {
-            num_picture = 4;
-            answers[0] = "16/3";
-            answers[1] = "32";
-            answers[2] = "8/11";
-            answers[3] = "15";
+            num_pic = 2;
+            if (num == 6)
+            {
+                answers[0] = "0,7";
+                answers[1] = "0,8";
+                answers[2] = "0,9";
+                answers[3] = "0,6";
+                condition = "P(3<X⩽5)";
+            }
+            if (num == 7)
+            {
+                answers[0] = "0,7";
+                answers[1] = "0,1";
+                answers[2] = "0,2";
+                answers[3] = "0,5";
+                condition = "P(4<X⩽6)";
+            }
+            if (num == 8)
+            {
+                answers[0] = "0,3";
+                answers[1] = "0,4";
+                answers[2] = "0,1";
+                answers[3] = "0";
+                condition = "P(3⩽X<5)";
+            }
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //танцы с бубном ака шафл(перемешивание) массива ответов: делаем массив, в него их передаём, переводим его в лист, шаффлим лист, переводим обратно в массив (как допёр - сам не знаю)//
@@ -102,9 +147,9 @@ public class PracticeTask12
             res3[i] = res2.get(i);
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addText("17. Непрерывная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда её дисперсия равна:");
+        poiMainClassVariant.addText("12. Дискретная случайная величина Х задана функцией распределения вероятностей (см. картинку). Тогда вероятность " + condition + " равна:");
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addPicture(pictures[num_picture], weight, height);
+        poiMainClassVariant.addPicture(pictures[num_pic], width, height);
         poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
@@ -121,7 +166,7 @@ public class PracticeTask12
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
             {
-                //poiMainClassAnswers.addText("№17 - " + alphabet[i] + ";");
+                //poiMainClassAnswers.addText("№12 - " + alphabet[i] + ";");
                 poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
             }
         }

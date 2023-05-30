@@ -162,69 +162,9 @@
                   <text value="5"/>
                 </properties>
               </component>
-              <component id="5779d" class="javax.swing.JCheckBox" binding="checkBoxPractice1">
+              <component id="5779d" class="javax.swing.JCheckBox" binding="checkBoxPractice6">
                 <constraints>
                   <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="1"/>
-                </properties>
-              </component>
-              <component id="31eec" class="javax.swing.JCheckBox" binding="checkBoxPractice2">
-                <constraints>
-                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="2"/>
-                </properties>
-              </component>
-              <component id="ab6be" class="javax.swing.JCheckBox" binding="checkBoxPractice3">
-                <constraints>
-                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="3"/>
-                </properties>
-              </component>
-              <component id="da039" class="javax.swing.JCheckBox" binding="checkBoxPractice4">
-                <constraints>
-                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="4"/>
-                </properties>
-              </component>
-              <component id="7aa5b" class="javax.swing.JCheckBox" binding="checkBoxPractice5">
-                <constraints>
-                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-14472911"/>
-                  <focusPainted value="false"/>
-                  <font name="JetBrains Mono" size="14" style="1"/>
-                  <foreground color="-11613021"/>
-                  <text value="5"/>
-                </properties>
-              </component>
-              <component id="27cef" class="javax.swing.JCheckBox" binding="checkBoxPractice6">
-                <constraints>
-                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -234,9 +174,9 @@
                   <text value="6"/>
                 </properties>
               </component>
-              <component id="30a75" class="javax.swing.JCheckBox" binding="checkBoxPractice7">
+              <component id="31eec" class="javax.swing.JCheckBox" binding="checkBoxPractice7">
                 <constraints>
-                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -246,9 +186,9 @@
                   <text value="7"/>
                 </properties>
               </component>
-              <component id="c0fd" class="javax.swing.JCheckBox" binding="checkBoxPractice8">
+              <component id="ab6be" class="javax.swing.JCheckBox" binding="checkBoxPractice8">
                 <constraints>
-                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -258,9 +198,9 @@
                   <text value="8"/>
                 </properties>
               </component>
-              <component id="d5021" class="javax.swing.JCheckBox" binding="checkBoxPractice9">
+              <component id="da039" class="javax.swing.JCheckBox" binding="checkBoxPractice9">
                 <constraints>
-                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -270,9 +210,9 @@
                   <text value="9"/>
                 </properties>
               </component>
-              <component id="b842" class="javax.swing.JCheckBox" binding="checkBoxPractice10">
+              <component id="7aa5b" class="javax.swing.JCheckBox" binding="checkBoxPractice10">
                 <constraints>
-                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -282,9 +222,9 @@
                   <text value="10"/>
                 </properties>
               </component>
-              <component id="e1921" class="javax.swing.JCheckBox" binding="checkBoxPractice11">
+              <component id="27cef" class="javax.swing.JCheckBox" binding="checkBoxPractice11">
                 <constraints>
-                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -294,9 +234,9 @@
                   <text value="11"/>
                 </properties>
               </component>
-              <component id="67cdc" class="javax.swing.JCheckBox" binding="checkBoxPractice12">
+              <component id="30a75" class="javax.swing.JCheckBox" binding="checkBoxPractice12">
                 <constraints>
-                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -306,9 +246,9 @@
                   <text value="12"/>
                 </properties>
               </component>
-              <component id="b428a" class="javax.swing.JCheckBox" binding="checkBoxPractice13">
+              <component id="c0fd" class="javax.swing.JCheckBox" binding="checkBoxPractice13">
                 <constraints>
-                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-14472911"/>
@@ -318,7 +258,67 @@
                   <text value="13"/>
                 </properties>
               </component>
-              <component id="a98ba" class="javax.swing.JCheckBox" binding="checkBoxPractice14">
+              <component id="d5021" class="javax.swing.JCheckBox" binding="checkBoxPractice14">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="14"/>
+                </properties>
+              </component>
+              <component id="b842" class="javax.swing.JCheckBox" binding="checkBoxPractice15">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="15"/>
+                </properties>
+              </component>
+              <component id="e1921" class="javax.swing.JCheckBox" binding="checkBoxPractice16">
+                <constraints>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="16"/>
+                </properties>
+              </component>
+              <component id="67cdc" class="javax.swing.JCheckBox" binding="checkBoxPractice17">
+                <constraints>
+                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="17"/>
+                </properties>
+              </component>
+              <component id="b428a" class="javax.swing.JCheckBox" binding="checkBoxPractice18">
+                <constraints>
+                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14472911"/>
+                  <focusPainted value="false"/>
+                  <font name="JetBrains Mono" size="14" style="1"/>
+                  <foreground color="-11613021"/>
+                  <text value="18"/>
+                </properties>
+              </component>
+              <component id="a98ba" class="javax.swing.JCheckBox" binding="checkBoxPractice19">
                 <constraints>
                   <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -327,7 +327,7 @@
                   <focusPainted value="false"/>
                   <font name="JetBrains Mono" size="14" style="1"/>
                   <foreground color="-11613021"/>
-                  <text value="14"/>
+                  <text value="19"/>
                 </properties>
               </component>
               <vspacer id="f694d">

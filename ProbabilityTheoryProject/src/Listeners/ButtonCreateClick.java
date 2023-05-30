@@ -233,99 +233,99 @@ public class ButtonCreateClick implements ActionListener
                     if (checkBoxPractice1.isSelected())
                     {
                         int num = i;
-                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask1.practiceTask1Function();
+                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask6.practiceTask6Function();
                         var++;
                     }
                     if (checkBoxPractice2.isSelected())
                     {
                         int num = i;
-                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask2.practiceTask2Function();
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask7.practiceTask7Function();
                         var++;
                     }
                     if (checkBoxPractice3.isSelected())
                     {
                         int num = i;
-                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask3.practiceTask3Function();
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask8.practiceTask8Function();
                         var++;
                     }
                     if (checkBoxPractice4.isSelected())
                     {
                         int num = i;
-                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask4.practiceTask4Function();
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask9.practiceTask9Function();
                         var++;
                     }
                     if (checkBoxPractice5.isSelected())
                     {
                         int num = i;
-                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask5.practiceTask5Function();
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask10.practiceTask10Function();
                         var++;
                     }
                     if (checkBoxPractice6.isSelected())
                     {
                         int num = i;
-                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask6.practiceTask6Function();
-                        var++;
-                    }
-                    if (checkBoxPractice7.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask7.practiceTask7Function();
-                        var++;
-                    }
-                    if (checkBoxPractice8.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask8.practiceTask8Function();
-                        var++;
-                    }
-                    if (checkBoxPractice9.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask9.practiceTask9Function();
-                        var++;
-                    }
-                    if (checkBoxPractice10.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask10.practiceTask10Function();
-                        var++;
-                    }
-                    if (checkBoxPractice11.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask11.practiceTask11Function();
                         var++;
                     }
-                    if (checkBoxPractice12.isSelected())
+                    if (checkBoxPractice7.isSelected())
                     {
                         int num = i;
                         PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask12.practiceTask12Function();
                         var++;
                     }
+                    if (checkBoxPractice8.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask13.practiceTask13Function();
+                        var++;
+                    }
+                    if (checkBoxPractice9.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask14.practiceTask14Function();
+                        var++;
+                    }
+                    if (checkBoxPractice10.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask15 practiceTask15 = new PracticeTask15(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask15.practiceTask15Function();
+                        var++;
+                    }
+                    if (checkBoxPractice11.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask16 practiceTask16 = new PracticeTask16(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask16.practiceTask16Function();
+                        var++;
+                    }
+                    if (checkBoxPractice12.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask17 practiceTask17 = new PracticeTask17(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask17.practiceTask17Function();
+                        var++;
+                    }
                     if (checkBoxPractice13.isSelected())
                     {
                         int num = i;
-                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask13.practiceTask13Function();
+                        PracticeTask18 practiceTask18 = new PracticeTask18(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask18.practiceTask18Function();
                         var++;
                     }
                     if (checkBoxPractice14.isSelected())
                     {
                         int num = i;
-                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask14.practiceTask14Function();
+                        PracticeTask19 practiceTask19 = new PracticeTask19(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask19.practiceTask19Function();
                         var++;
                     }
                     poiMainClassVariant.printToFile();
@@ -457,102 +457,103 @@ public class ButtonCreateClick implements ActionListener
                     if (checkBoxPractice1.isSelected())
                     {
                         int num = i;
-                        PracticeTask1 practiceTask1 = new PracticeTask1(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask1.practiceTask1Function();
+                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask6.practiceTask6Function();
                         var++;
                     }
                     if (checkBoxPractice2.isSelected())
                     {
                         int num = i;
-                        PracticeTask2 practiceTask2 = new PracticeTask2(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask2.practiceTask2Function();
+                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask7.practiceTask7Function();
                         var++;
                     }
                     if (checkBoxPractice3.isSelected())
                     {
                         int num = i;
-                        PracticeTask3 practiceTask3 = new PracticeTask3(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask3.practiceTask3Function();
+                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask8.practiceTask8Function();
                         var++;
                     }
                     if (checkBoxPractice4.isSelected())
                     {
                         int num = i;
-                        PracticeTask4 practiceTask4 = new PracticeTask4(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask4.practiceTask4Function();
+                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask9.practiceTask9Function();
                         var++;
                     }
                     if (checkBoxPractice5.isSelected())
                     {
                         int num = i;
-                        PracticeTask5 practiceTask5 = new PracticeTask5(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask5.practiceTask5Function();
+                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask10.practiceTask10Function();
                         var++;
                     }
                     if (checkBoxPractice6.isSelected())
                     {
                         int num = i;
-                        PracticeTask6 practiceTask6 = new PracticeTask6(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask6.practiceTask6Function();
-                        var++;
-                    }
-                    if (checkBoxPractice7.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask7 practiceTask7 = new PracticeTask7(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask7.practiceTask7Function();
-                        var++;
-                    }
-                    if (checkBoxPractice8.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask8 practiceTask8 = new PracticeTask8(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask8.practiceTask8Function();
-                        var++;
-                    }
-                    if (checkBoxPractice9.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask9 practiceTask9 = new PracticeTask9(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask9.practiceTask9Function();
-                        var++;
-                    }
-                    if (checkBoxPractice10.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask10 practiceTask10 = new PracticeTask10(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
-                        practiceTask10.practiceTask10Function();
-                        var++;
-                    }
-                    if (checkBoxPractice11.isSelected())
-                    {
-                        int num = i;
-                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        PracticeTask11 practiceTask11 = new PracticeTask11(poiMainClassVariant, poiMainClassAnswers, num, var);
                         practiceTask11.practiceTask11Function();
                         var++;
                     }
-                    if (checkBoxPractice12.isSelected())
+                    if (checkBoxPractice7.isSelected())
                     {
                         int num = i;
                         PracticeTask12 practiceTask12 = new PracticeTask12(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
                         practiceTask12.practiceTask12Function();
                         var++;
                     }
+                    if (checkBoxPractice8.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask13.practiceTask13Function();
+                        var++;
+                    }
+                    if (checkBoxPractice9.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask14.practiceTask14Function();
+                        var++;
+                    }
+                    if (checkBoxPractice10.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask15 practiceTask15 = new PracticeTask15(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask15.practiceTask15Function();
+                        var++;
+                    }
+                    if (checkBoxPractice11.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask16 practiceTask16 = new PracticeTask16(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask16.practiceTask16Function();
+                        var++;
+                    }
+                    if (checkBoxPractice12.isSelected())
+                    {
+                        int num = i;
+                        PracticeTask17 practiceTask17 = new PracticeTask17(poiMainClassVariant, poiMainClassAnswers, fontSize, num, var);
+                        practiceTask17.practiceTask17Function();
+                        var++;
+                    }
                     if (checkBoxPractice13.isSelected())
                     {
                         int num = i;
-                        PracticeTask13 practiceTask13 = new PracticeTask13(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask13.practiceTask13Function();
+                        PracticeTask18 practiceTask18 = new PracticeTask18(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask18.practiceTask18Function();
                         var++;
                     }
                     if (checkBoxPractice14.isSelected())
                     {
                         int num = i;
-                        PracticeTask14 practiceTask14 = new PracticeTask14(poiMainClassVariant, poiMainClassAnswers, num, var);
-                        practiceTask14.practiceTask14Function();
+                        PracticeTask19 practiceTask19 = new PracticeTask19(poiMainClassVariant, poiMainClassAnswers, num, var);
+                        practiceTask19.practiceTask19Function();
                         var++;
                     }
                     poiMainClassVariant.printToFile();
+                    if (i < kol) poiMainClassVariant.newPage();
                 }
                 poiMainClassAnswers.printToFile();
             }

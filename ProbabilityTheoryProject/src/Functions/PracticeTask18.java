@@ -4,7 +4,7 @@ import Listeners.PoiMainClass;
 
 import java.util.*;
 
-public class PracticeTask3
+public class PracticeTask18
 {
     //////////////////////////////////////////
     //передаём объекты и создаём конструктор//
@@ -14,7 +14,7 @@ public class PracticeTask3
     int num;
     int var;
 
-    public PracticeTask3(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
+    public PracticeTask18(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
@@ -24,54 +24,57 @@ public class PracticeTask3
 
     Random rand = new Random();
 
-    public void practiceTask3Function()
+    public void practiceTask18Function()
     {
-        ///////////////////////////
-        //вроде правильно считает//
-        ////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //считает вроде правильно, хотел сделать ещё с нечётным кол-ом членов ряда, но тогда само задание надо менять, а такое вряд ли надо//
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //массив букв и ответов//
         /////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] alphabetTable = {"А", "Б", "В", "Г"};
-        String[] answers = {"", "", "", ""};
-        ///////////////////////////////////////////
-        //создаём две вероятности и считаем ответ//
-        ///////////////////////////////////////////
-        double p1 = rand.nextDouble(0.1, 0.9);
-        double p2 = rand.nextDouble(0.1, 0.9);
-        double answer = 1 - ((1 - p1) * (1 - p2));
+        int[] answers = {0, 0, 0, 0};
+        //////////////
+        //пустой ряд//
+        //////////////
+        int[] mas = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         /////////////////////////////
-        //делаем 3 случайных ответа//
+        //заполнили и отсортировали//
         /////////////////////////////
-        double answer1 = answer * 0.5;
-        double answer2 = answer * 0.75;
-        double answer3 = answer * 1.25;
-        /////////////////////////////////////////
-        //округляем до 3-х знаков после запятой//
-        /////////////////////////////////////////
-        answers[0] = String.format("%.3f", answer);
-        answers[1] = String.format("%.3f", answer1);
-        answers[2] = String.format("%.3f", answer2);
-        answers[3] = String.format("%.3f", answer3);
+        for (int i = 0; i < 10; i++)
+            mas[i] = rand.nextInt(10, 20);
+        Arrays.sort(mas);
+        /////////////////////////
+        //нашли ответ и медиану//
+        /////////////////////////
+        int answer = mas[5];
+        int med = (mas[4] + mas[5]) / 2;
+        //////////////////////////////////////////////////////////////////////////////////////////////////
+        //ради этих 2-ух строчек я сидел часа 2, потому что java округляет числа с 0.5 в меньшую сторону//
+        //////////////////////////////////////////////////////////////////////////////////////////////////
+        if ((mas[4] + mas[5]) % 2 == 1)
+            answer -= 1;
+        int answer1 = mas[5] + 1;
+        int answer2 = mas[5] + 2;
+        int answer3 = mas[5] + 3;
+        answers[0] = answer;
+        answers[1] = answer1;
+        answers[2] = answer2;
+        answers[3] = answer3;
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //танцы с бубном ака шафл(перемешивание) массива ответов: делаем массив, в него их передаём, переводим его в лист, шаффлим лист, переводим обратно в массив (как допёр - сам не знаю)//
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        String[] res = {"", "", "", ""};
+        Integer[] res = {0, 0, 0, 0};
         for (int i = 0; i < 4; i++)
             res[i] = answers[i];
-        List<String> res2 = Arrays.asList(res);
+        List<Integer> res2 = Arrays.asList(res);
         Collections.shuffle(res2);
-        String[] res3 = {"", "", "", ""};
+        Integer[] res3 = {0, 0, 0, 0};
         for (int i = 0; i < 4; i++)
             res3[i] = res2.get(i);
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
-        ///////////////////////////////////
-        //округляем значение вероятностей//
-        ///////////////////////////////////
-        String p_1 = String.format("%.2f", p1);
-        String p_2 = String.format("%.2f", p2);
-        poiMainClassVariant.addText("8. Вероятность поражения здания первой бомбой равна " + p_1 + ", а второй - " + p_2 + ". Обе бомбы сбрасывают одновременно. Тогда вероятность поражения цели равна:");
+        poiMainClassVariant.addText("18. Медиана вариационного ряда " + mas[0] + ", " + mas[1] + ", " + mas[2] + ", " + mas[3] + ", " + mas[4] + ", X, " + mas[6] + ", " + mas[7] + ", " + mas[8] + ", " + mas[9] + " равна " + med + ". Тогда значение варианты Х равно:");
         poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
@@ -88,7 +91,7 @@ public class PracticeTask3
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
             {
-                //poiMainClassAnswers.addText("№8 - " + alphabet[i] + ";");
+                //poiMainClassAnswers.addText("№18 - " + alphabet[i] + ";");
                 poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }

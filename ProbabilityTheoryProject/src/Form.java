@@ -15,11 +15,9 @@ public class Form extends JFrame
     private JPanel tasksPanel;
     private JLabel labelChoice, labelTheory, labelPractice;
     private JButton buttonTheory, buttonPractice;
-    private JCheckBox checkBoxTheory1, checkBoxTheory2, checkBoxTheory3, checkBoxTheory4, checkBoxTheory5, checkBoxPractice1, checkBoxPractice2,
-            checkBoxPractice3, checkBoxPractice4, checkBoxPractice5, checkBoxPractice6, checkBoxPractice7, checkBoxPractice8,
-            checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13, checkBoxPractice14;
-    private ButtonTheoryClick buttonTheoryClick;
-    private ButtonPracticeClick buttonPracticeClick;
+    private JCheckBox checkBoxTheory1, checkBoxTheory2, checkBoxTheory3, checkBoxTheory4, checkBoxTheory5, checkBoxPractice6, checkBoxPractice7,
+            checkBoxPractice8, checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13,
+            checkBoxPractice14, checkBoxPractice15, checkBoxPractice16, checkBoxPractice17, checkBoxPractice18, checkBoxPractice19;
 
     ///////////////////////////////////////////
     //Вкладка "Предпросмотр", все её элементы//
@@ -30,7 +28,6 @@ public class Form extends JFrame
     private JComboBox<Integer> comboBoxSizes;
     private JTextPane textPaneVariant, textPaneAnswers;
     private JButton buttonApply;
-    private ButtonApplyClick buttonApplyClick;
 
     /////////////////////////////////////////////////////
     //Вкладка "Сохранение и генерация", все её элементы//
@@ -40,10 +37,6 @@ public class Form extends JFrame
     private JTextField textFieldQuantity, textFieldSave;
     private JRadioButton radioButtonMany, radioButtonOne;
     private JButton buttonSave, buttonCreate;
-    private JFileChooser fileChooser;
-    private TextFieldQuantityInput textFieldQuantityInput;
-    private ButtonSaveClick buttonSaveClick;
-    private ButtonCreateClick buttonCreateClick;
 
     Form()
     {
@@ -72,17 +65,17 @@ public class Form extends JFrame
 
         JCheckBox []checkBoxesPractice = new JCheckBox[]
                 {
-                        checkBoxPractice1, checkBoxPractice2, checkBoxPractice3, checkBoxPractice4, checkBoxPractice5, checkBoxPractice6, checkBoxPractice7, checkBoxPractice8,
-                        checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13, checkBoxPractice14
+                        checkBoxPractice6, checkBoxPractice7, checkBoxPractice8, checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13,
+                        checkBoxPractice14, checkBoxPractice15, checkBoxPractice16, checkBoxPractice17, checkBoxPractice18, checkBoxPractice19
                 };
 
         ///////////////////////////////////////////////////////
         //обработчики выбора всех чекбоксов теории и практики//
         ///////////////////////////////////////////////////////
-        buttonTheoryClick = new ButtonTheoryClick(checkBoxesTheory);
+        ButtonTheoryClick buttonTheoryClick = new ButtonTheoryClick(checkBoxesTheory);
         buttonTheory.addActionListener(buttonTheoryClick);
 
-        buttonPracticeClick = new ButtonPracticeClick(checkBoxesPractice);
+        ButtonPracticeClick buttonPracticeClick = new ButtonPracticeClick(checkBoxesPractice);
         buttonPractice.addActionListener(buttonPracticeClick);
 
         //////////////////////////
@@ -92,7 +85,7 @@ public class Form extends JFrame
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //обработчик применения шрифтов и размера для просмотра//
         /////////////////////////////////////////////////////////
-        buttonApplyClick = new ButtonApplyClick(comboBoxFonts, comboBoxSizes, textPaneVariant, textPaneAnswers);
+        ButtonApplyClick buttonApplyClick = new ButtonApplyClick(comboBoxFonts, comboBoxSizes, textPaneVariant, textPaneAnswers);
         buttonApply.addActionListener(buttonApplyClick);
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,15 +107,17 @@ public class Form extends JFrame
         //////////////////////////////////////////////////////////////////////
         //обработчики ввода кол-ва вариантов и выбора пути, кнопка "создать"//
         //////////////////////////////////////////////////////////////////////
-        textFieldQuantityInput = new TextFieldQuantityInput(textFieldQuantity);
+        TextFieldQuantityInput textFieldQuantityInput = new TextFieldQuantityInput(textFieldQuantity);
         textFieldQuantity.addKeyListener(textFieldQuantityInput);
 
-        fileChooser = new JFileChooser();
-        buttonSaveClick = new ButtonSaveClick(fileChooser, textFieldSave);
+        JFileChooser fileChooser = new JFileChooser();
+        ButtonSaveClick buttonSaveClick = new ButtonSaveClick(fileChooser, textFieldSave);
         buttonSave.addActionListener(buttonSaveClick);
 
-        buttonCreateClick = new ButtonCreateClick(checkBoxesTheory, checkBoxesPractice, textFieldQuantity, radioButtonMany, radioButtonOne, textFieldSave, comboBoxFonts, comboBoxSizes, checkBoxTheory1, checkBoxTheory2, checkBoxTheory3, checkBoxTheory4, checkBoxTheory5, checkBoxPractice1, checkBoxPractice2, checkBoxPractice3, checkBoxPractice4, checkBoxPractice5, checkBoxPractice6, checkBoxPractice7, checkBoxPractice8,
-                checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13, checkBoxPractice14);
+        ButtonCreateClick buttonCreateClick = new ButtonCreateClick(checkBoxesTheory, checkBoxesPractice, textFieldQuantity, radioButtonMany, radioButtonOne, textFieldSave,
+                comboBoxFonts, comboBoxSizes, checkBoxTheory1, checkBoxTheory2, checkBoxTheory3, checkBoxTheory4, checkBoxTheory5, checkBoxPractice6, checkBoxPractice7,
+                checkBoxPractice8, checkBoxPractice9, checkBoxPractice10, checkBoxPractice11, checkBoxPractice12, checkBoxPractice13,
+                checkBoxPractice14, checkBoxPractice15, checkBoxPractice16, checkBoxPractice17, checkBoxPractice18, checkBoxPractice19);
         buttonCreate.addActionListener(buttonCreateClick);
     }
 }

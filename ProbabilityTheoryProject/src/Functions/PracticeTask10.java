@@ -11,16 +11,14 @@ public class PracticeTask10
     //////////////////////////////////////////
     PoiMainClass poiMainClassVariant;
     PoiMainClass poiMainClassAnswers;
-    final int font_size;
-    int num1;
+    int num;
     int var;
 
-    public PracticeTask10(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int font_size, int num1, int var)
+    public PracticeTask10(PoiMainClass poiMainClassVariant, PoiMainClass poiMainClassAnswers, int num, int var)
     {
         this.poiMainClassVariant = poiMainClassVariant;
         this.poiMainClassAnswers = poiMainClassAnswers;
-        this.font_size = font_size;
-        this.num1 = num1;
+        this.num = num;
         this.var = var;
     }
 
@@ -28,67 +26,41 @@ public class PracticeTask10
 
     public void practiceTask10Function()
     {
-        //////////////////////
-        //правильно работает//
-        //////////////////////////////////
-        //массив букв, картинок, ответов//
-        //////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //вроде правильно считает (1 раз было не совсем точное округление, но это уже ошибка техники)//
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //массив букв и ответов//
+        /////////////////////////
         String[] alphabet = {"А)", "Б)", "В)", "Г)"};
         String[] alphabetTable = {"А", "Б", "В", "Г"};
-        String[] pictures = {"src\\dopRes\\practiceQuestion\\practiceQuestion10_1.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_2.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_3.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_4.png", "src\\dopRes\\practiceQuestion\\practiceQuestion10_5.png"};
-        int weight = 0;
-        int height = 0;
-        if (font_size == 10) { weight = 140; height = 70;}
-        if (font_size == 12) { weight = 160; height = 80;}
-        if (font_size == 14) { weight = 180; height = 100;}
-        if (font_size == 16) { weight = 190; height = 105;}
-        if (font_size == 18) { weight = 200; height = 110;}
         String[] answers = {"", "", "", ""};
-        int num_picture = -1;
-        int num = rand.nextInt(0, 5);
-        ///////////////////////////////////////////////////////////////
-        //в зависимости от условия выюираем картинку и ответы под неё//
-        ///////////////////////////////////////////////////////////////
-        if (num == 0)
-        {
-            num_picture = 0;
-            answers[0] = "8√3/3";
-            answers[1] = "2/3";
-            answers[2] = "√2/3";
-            answers[3] = "1";
-        }
-        if (num == 1)
-        {
-            num_picture = 1;
-            answers[0] = "8/3";
-            answers[1] = "√2/3";
-            answers[2] = "1/2";
-            answers[3] = "1";
-        }
-        if (num == 2)
-        {
-            num_picture = 2;
-            answers[0] = "4√3/3";
-            answers[1] = "√3/3";
-            answers[2] = "1";
-            answers[3] = "3/4";
-        }
-        if (num == 3)
-        {
-            num_picture = 3;
-            answers[0] = "4";
-            answers[1] = "√2/3";
-            answers[2] = "1/2";
-            answers[3] = "0";
-        }
-        if (num == 4)
-        {
-            num_picture = 4;
-            answers[0] = "2";
-            answers[1] = "√3/3";
-            answers[2] = "1";
-            answers[3] = "1/2";
-        }
+        /////////////////////////////////////////////////////////////////////////////////////////
+        //отдельный массив вероятностей (чтобы были красивые, ровные числа, пожалеем студентов)//
+        /////////////////////////////////////////////////////////////////////////////////////////
+        double[] h1_mass = {0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9};
+        int h1_num = rand.nextInt(0, 9);
+        double h1 = h1_mass[h1_num];
+        double h2 = h1_mass[h1_mass.length - 1 - h1_num];
+        ///////////////////////////////////////////////
+        //создаём две случайные вероятности неполучки//
+        ///////////////////////////////////////////////
+        double p1 = rand.nextDouble(0.1, 0.9);
+        double p2 = rand.nextDouble(0.1, 0.9);
+        double pochti_answer = h1 * p1 + h2 * p2;
+        double answer = (h2 * p2) / pochti_answer;
+        /////////////////////////////
+        //делаем 3 случайных ответа//
+        /////////////////////////////
+        double answer1 = answer * 0.5;
+        double answer2 = answer * 0.75;
+        double answer3 = answer * 1.25;
+        /////////////////////////////////////////
+        //округляем до 3-х знаков после запятой//
+        /////////////////////////////////////////
+        answers[0] = String.format("%.3f", answer);
+        answers[1] = String.format("%.3f", answer1);
+        answers[2] = String.format("%.3f", answer2);
+        answers[3] = String.format("%.3f", answer3);
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //танцы с бубном ака шафл(перемешивание) массива ответов: делаем массив, в него их передаём, переводим его в лист, шаффлим лист, переводим обратно в массив (как допёр - сам не знаю)//
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -102,9 +74,12 @@ public class PracticeTask10
             res3[i] = res2.get(i);
         poiMainClassVariant.newParagraph();
         poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addText("15. Непрерывная случайная величина Х задана плотностью распределения вероятностей (см. картинку). Тогда значение параметра С равно:");
-        poiMainClassVariant.newParagraph();
-        poiMainClassVariant.addPicture(pictures[num_picture], weight, height);
+        ///////////////////////////////////
+        //округляем значение вероятностей//
+        ///////////////////////////////////
+        String p_1 = String.format("%.2f", p1);
+        String p_2 = String.format("%.2f", p2);
+        poiMainClassVariant.addText("10. Бухгалтерия выдаёт " + h1 * 100 + "% всех зарплат работникам высшей категории, а " + h2 * 100 + "% - остальным работникам. Вероятность того, что работник высшей категории  не получит в срок зарплату, равна " + p_1 + "; а для остальных эта вероятность составляет " + p_2 + ". Получено сообщение о невыплате зарплаты. Тогда вероятность того, что зарплату  не получил работник не высшей категории, равна:");
         poiMainClassVariant.newParagraph();
         for (int i = 0; i < 4; i++)
         {
@@ -121,8 +96,8 @@ public class PracticeTask10
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (res3[i] == answers[0])
             {
-                //poiMainClassAnswers.addText("№15 - " + alphabet[i] + ";");
-                poiMainClassAnswers.addTaleItem(alphabetTable[i], num1, var);
+                //poiMainClassAnswers.addText("№10 - " + alphabet[i] + ";");
+                poiMainClassAnswers.addTaleItem(alphabetTable[i], num, var);
             }
         }
     }
